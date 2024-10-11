@@ -1,3 +1,7 @@
+# install imdbpy
+  pip install git+https://github.com/alberanid/imdbpy
+
+
 import requests
 from bs4 import BeautifulSoup
 
