@@ -6,7 +6,8 @@ from bs4 import BeautifulSoup
 import json
 
 
-df = pd.read_csv('movies.csv')
+df = pd.read_csv('C:/Users/salia/Desktop/Group_Project/Project-X/movies.csv')
+
 
 df.to_csv('movies.csv', index=False, columns=['title', 'url', 'rating', 'rating_count', 'description', 'genre', 'content_rating', 'duration'])
 
