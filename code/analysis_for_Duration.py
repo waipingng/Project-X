@@ -11,7 +11,7 @@ def parse_duration(duration):
         return hours * 60 + minutes  # Convert to total minutes
     return 0
 
-# Function to categorize movie length
+# Function to categorize movie lengthh
 def categorize_length(total_minutes):
     if total_minutes <= 60:
         return 'short'
