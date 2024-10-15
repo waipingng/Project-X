@@ -10,7 +10,7 @@ IMDb (Internet Movie Database) is a widely used online resource for information 
 
 2.1 Dataset Source
 
-The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. To collect the data, we used the IMDbPY Python library, which provides a simple interface to interact with IMDb's database and retrieve detailed information about movies, TV shows, and other content.
+The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. To collect the data, we use web scrape technique to collect the json data and define the relevant functions to grab the data we need to complete the analysis.
 
     Source URL: IMDb Top 250 Movies
     Scraping Tool: IMDbPY (Python library)
