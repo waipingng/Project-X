@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-BASE_DIR = "result"
+BASE_DIR = "artifacts"
 CSV_PATH = os.path.join(BASE_DIR, "results.csv")
 os.makedirs(BASE_DIR, exist_ok=True)
 
