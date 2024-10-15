@@ -27,7 +27,7 @@ average_ratings.columns = ['genre', 'average_rating']
 
 average_ratings.to_csv('average_ratings_by_genre.csv', index=False)
 ########### the probality of different genre's conten rating 
-#
+
 count_df = df.groupby(['genre', 'content_rating']).size().unstack(fill_value=0)
 
 
@@ -73,9 +73,7 @@ average_ratings.columns = ['new_genre', 'average_rating']
 
 average_ratings.to_csv('average_ratings_by_new_genre.csv', index=False)
 
-###########################the content rate by new genre
-
-
+###########################the content rate by new genre##########
 import pandas as pd
 
 
@@ -107,8 +105,9 @@ probability_df.reset_index(inplace=True)
 
 final_df = pd.merge(average_ratings, probability_df, on='new_genre', how='outer')
 
-final_df.to_csv('content_rating_by_new_genre.csv', index=False)
-################## content rate  by rate 
+final_df.to_csv('contentrating_genre.csv', index=False)
+
+################## content rate  by rate ############
 df = pd.read_csv('movies.csv')
 
 def classify_rating(rating):
@@ -124,17 +123,25 @@ def classify_rating(rating):
         return '9-9.3'
     else:
         return 'Other' 
-
-
 df['rating_category'] = df['rating'].apply(classify_rating)
 
 count_df = df.groupby(['rating_category', 'content_rating']).size().unstack(fill_value=0)
 
-total_counts = count_df.sum(axis=1)
+count_df.columns.name = None  
+count_df.reset_index(inplace=True)
 
-probability_df = count_df.div(total_counts, axis=0)
+count_df.to_csv('new_counting_rating.csv', index=False)
 
-probability_df.columns.name = None  
-probability_df.reset_index(inplace=True)
 
-probability_df.to_csv('content_rating_probabilities_by_rating_category.csv', index=False)
+# df['rating_category'] = df['rating'].apply(classify_rating)
+
+# count_df = df.groupby(['rating_category', 'content_rating']).size().unstack(fill_value=0)
+
+# total_counts = count_df.sum(axis=1)
+
+# probability_df = count_df.div(total_counts, axis=0)
+
+# probability_df.columns.name = None  
+# probability_df.reset_index(inplace=True)
+
+# probability_df.to_csv('content_rating_probabilities_by_rating_category.csv', index=False)
