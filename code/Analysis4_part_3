@@ -1,0 +1,29 @@
+#This Part is to Analyze which genres tend to win more awards and their corresponding box office performance &  analysis to check if certain directors or cast members tend to work on more award-winning movies.
+# Group data by genre and calculate mean box office and awards
+def analyze_genre_performance(df):
+    """Analyze the average box office and awards for each genre."""
+    genre_stats = df.groupby('Genre')[['BoxOffice', 'TotalAwards']].mean().sort_values('TotalAwards', ascending=False)
+    
+    print("Average Box Office and Awards by Genre:")
+    print(genre_stats)
+
+    # Plot genre performance
+    genre_stats.plot(kind='bar', figsize=(10, 6))
+    plt.title('Average Box Office and Awards by Genre')
+    plt.xlabel('Genre')
+    plt.ylabel('Average Value')
+    plt.show()
+
+# Perform the genre analysis
+analyze_genre_performance(cleaned_data)
+
+# Group data by Director and calculate the mean box office and awards
+def analyze_director_performance(df):
+    """Analyze the average box office and awards for each director."""
+    director_stats = df.groupby('Director')[['BoxOffice', 'TotalAwards']].mean().sort_values('TotalAwards', ascending=False)
+    
+    print("Average Box Office and Awards by Director:")
+    print(director_stats.head(10))  # Show top 10 directors
+
+# Perform the director analysis
+analyze_director_performance(cleaned_data)
