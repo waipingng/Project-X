@@ -2,7 +2,7 @@ IMDb Top 250 Movies Analysis Report
 
 1. Introduction
 
-The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding trends in movie ratings and exploring how genres and ratings have evolved over time. The project aims to uncover insights regarding average ratings across genres and how movie ratings have changed throughout the years.
+The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding what can make a movie successful, for example, how can the movie company target their target viewers. The project aims to uncover insights regarding average ratings across genres and how movie ratings have changed throughout the years.
 
 IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, and video games, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb, scraped using the IMDbPY library in Python.
 
