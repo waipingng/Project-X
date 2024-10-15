@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-# Function to convert ISO 8601 duration (PTxHyM) to total minutess
+# Function to convert ISO 8601 duration (PTxHyM) to total minutes
 def parse_duration(duration):
     # Use regex to extract hours and minutes
     match = re.match(r'PT(\d+)H(\d+)M', duration)
