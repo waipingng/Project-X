@@ -114,8 +114,10 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 4.4 Duration insights:
 
-    By categorizing movies based on their runtime and analyzing the average ratings, the study aims to understand whether longer movies tend to be rated higher by 
-    audiences, potentially indicating that longer runtimes allow for more developed plots and character arcs, contributing to higher satisfaction.
+    The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less 
+    common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are 
+    associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion 
+    in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
 5. Limitations
 
