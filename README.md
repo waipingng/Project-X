@@ -1,65 +1,51 @@
-IMDb Top 250 Movies Analysis Report
+IMDb Top 250 Movies Analysis Report: How can make movie last longer?
 
 1. Introduction
 
-The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding what can make a movie successful, for example, how can the movie company target their target viewers. The project aims to uncover insights regarding average ratings across genres and how movie ratings have changed throughout the years.
+IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb. Also, IMDb covers every latest movie to reflect the people's preferences. So, we would like to discover what types of movie can get higher rating and what makes the movies keep attracting viewers' attention.
 
-IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, and video games, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb. Also, IMDb covers every latest movie to reflect the people's preferences.
+The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding what can make a movie successful, for example, how can the movie company target their target viewers. The project aims to uncover insights regarding average ratings across genres and how movie ratings reflect people's preferences.
 
 2. Data Source
 
 2.1 Dataset Source
 
-The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. To collect the data, we use web scrape technique to collect the json data and define the relevant functions to grab the data we need to complete the analysis.
+The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. We also believe top 250 movies can capture people's likes and dislikes about movies and provide enough infomation for analyzing what can make movies successful. Moreover, IMDb has fairly wide databases containing wide range of movies and the viewers' ratings and reviews can replect how this movie stay in a high rating. To collect the data, we use web scrape techniques to collect the json data and define the relevant functions to grab the data we need to complete the analysis such as casts, description, and estimated budget.
 
-2.2 Data Collection Methods
+2.2 Data Collection
 
-The data was collected using the beautiful soup, which allowed us to grab movie information directly from IMDb’s database. The data was collected for the top 250 movies, and the following attributes were scraped:
+To collect the data, we use web scrape techniques to collect the json data and define the relevant functions to grab the data we need to complete the analysis such as casts, description, and estimated budget. During the process, using the beautiful soup allows us to grab movie information directly from IMDb’s database. 
 
-    Rank: The movie's rank in the Top 250 list.
-    Title: The movie's title.
-    Year: The year the movie was released.
-    Rating: The IMDb rating of the movie, provided by users.
-    Genres: The genres associated with the movie (e.g., Drama, Action).
-    Description: The intorduction of the movie.
+The data was collected for the top 250 movies, and the following attributes were scraped:
 
-Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file and JSON file for further analysis.
+    Rank: The movie's rank in the Top 250 list
+    Title: The movie's title
+    Year: The year the movie was released
+    Rating: The IMDb rating of the movie, provided by users
+    Genres: The genres associated with the movie (e.g., Drama, Action)
+    Description: The intorduction of the movie
+    Casts: The names of stars
+    Estimated budget: The cost of making the movie
+    Gross worlwide: The revenue from releasing movie to movie theaters
 
-2.3 Understanding the Data
+Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file for further analysis.
 
-Each column represents specific information about a movie:
-
-    Rank: The position of the movie in the Top 250 list, with 1 being the highest-ranked.
-    Title: The name of the movie.
-    Year: The release year of the movie.
-    Rating: The average user rating on IMDb, ranging from 1 to 10.
-    Genres: A list of genres associated with the movie (e.g., "Drama", "Action").
-    Director: The name(s) of the movie's director(s).
-
-2.4 Missing Data
+2.3 Data Limitations
 
 Some movies in the Top 250 list may not have complete information. For example:
 
-    Ratings: Some movies may lack sufficient user ratings, leading to missing or incomplete data.
-    Genres: Some movies may have incomplete genre classification.
+    1. Ratings: Some movies may lack sufficient user ratings, leading to missing or incomplete data. Also, some movie has higher reputation in people's mind,but the viewers are not willing to reveal their thought in IMDb website.
+    2. Genres: Some movies may have incomplete genre classification which can makes some movies has same genre tags have different ranking.
+    3. Subjective Ratings: The IMDb ratings are subjective and are based on user votes, which can be influenced by factors such as recency bias or popularity.
+    4. Popularity Bias: The Top 250 list reflects popular and well-known movies, so lesser-known or independent films may be underrepresented.
 
-We addressed missing data by removing entries that lacked key information (e.g., movies with no ratings).
+2.4 Possible Extensions
 
-2.5 Data Limitations
+To improve the dataset and further analysis, the following extensions could be considered:
 
-While IMDb is one of the most comprehensive movie databases, there are several limitations:
-
-    Subjective Ratings: The IMDb ratings are subjective and are based on user votes, which can be influenced by factors such as recency bias or popularity.
-    Popularity Bias: The Top 250 list reflects popular and well-known movies, so lesser-known or independent films may be underrepresented.
-    Limited Information: IMDbPY provides a limited subset of the full data available on IMDb. For instance, detailed cast and crew information or user reviews were not included in this analysis.
-
-2.6 Possible Extensions
-
-To improve the dataset and analysis, the following extensions could be considered:
-
-    Inclusion of Cast Information: Scraping data about the cast for each movie could provide insights into how actor popularity correlates with movie ratings.
-    User Review Sentiment Analysis: Scraping user reviews and analyzing sentiment could provide more in-depth insights into why some movies are rated highly.
-    Comparing with Other Platforms: Adding data from other review platforms (e.g., Rotten Tomatoes, Metacritic) would allow for cross-platform comparisons.
+    1. Inclusion of Cast Information: For exampl, the details for the cast members, so we can analyse how diversity affects movies in a more detailed way.
+    2. User Review Sentiment Analysis: Scraping user reviews to capture some keywords for people's feelings could provide more in-depth insights into why some movies are rated highly.
+    3. Comparing with Other Platforms: Adding data from other review platforms, for instance, Rotten Tomatoes would allow for cross-platform comparisons becasue it also contains the rating from professional critics and the popularity from the audiences.
 
 3. Analysis Methodology
 
