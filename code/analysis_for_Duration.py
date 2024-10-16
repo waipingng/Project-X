@@ -17,8 +17,10 @@ def categorize_length(total_minutes):
         return 'short'
     elif total_minutes <= 100:
         return 'medium'
+    elif total_minutes <= 180:
+        return "long"
     else:
-        return 'long'
+        return ' very long'
 
 # Step 1: Load the CSV file
 df = pd.read_csv('movies.csv')
