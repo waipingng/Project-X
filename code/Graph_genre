@@ -14,7 +14,7 @@ plt.xlabel('Different Genre Category', fontsize=12)
 plt.ylabel('Frequency', fontsize=12)
 
 # Rotate the genre labels to be vertical
-plt.xticks(rotation=0)
+plt.xticks(rotation=90)
 
 # Step 4: Save the plot as an image file
 plt.tight_layout()
