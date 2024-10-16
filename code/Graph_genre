@@ -1,0 +1,24 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Step 1: Load the CSV file generated from your previous script
+length_count = pd.read_csv('artifacts/genre_frequency.csv')
+
+# Step 2: Plot the bar graph
+plt.figure(figsize=(8, 6))
+plt.bar(length_count['genre'], length_count['frequency'], color=['blue', 'green', 'red'])
+
+# Step 3: Customize the plot
+plt.title('Frequency of Genre Categories', fontsize=14)
+plt.xlabel('Different Genre Category', fontsize=12)
+plt.ylabel('Frequency', fontsize=12)
+
+# Rotate the genre labels to be vertical
+plt.xticks(rotation=0)
+
+# Step 4: Save the plot as an image file
+plt.tight_layout()
+plt.savefig('artifacts/movie_genre_plot.png')
+
+# Step 5: Show the plot
+plt.show()
