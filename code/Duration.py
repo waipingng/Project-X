@@ -15,7 +15,7 @@ def parse_duration(duration):
 def categorize_length(total_minutes):
     if total_minutes <= 60:
         return 'short'
-    elif total_minutes <= 100:
+    elif total_minutes <= 90:
         return 'medium'
     else:
         return 'long'
