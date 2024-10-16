@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-# Function to convert ISO 8601 duration (PTxHyM) to total minutess
+# Function to convert ISO 8601 duration (PTxHyM) to total minutes
 def parse_duration(duration):
     # Use regex to extract hours and minutes
     match = re.match(r'PT(\d+)H(\d+)M', duration)
@@ -11,16 +11,14 @@ def parse_duration(duration):
         return hours * 60 + minutes  # Convert to total minutes
     return 0
 
-# Function to categorize movie lengthh
+# Function to categorize movie length
 def categorize_length(total_minutes):
     if total_minutes <= 60:
         return 'short'
-    elif total_minutes <= 100:
+    elif total_minutes <= 90:
         return 'medium'
-    elif total_minutes <= 180:
-        return "long"
     else:
-        return ' very long'
+        return 'long'
 
 # Step 1: Load the CSV file
 df = pd.read_csv('movies.csv')
