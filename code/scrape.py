@@ -40,10 +40,10 @@ def write_books_to_csv(data, path):
 
 if __name__ == "__main__":
 
-    BASE_DIR = "/Users/wangyuchen/Desktop/PythonPrac/artifacts"
+    BASE_DIR = "artifacts"
     CSV_PATH = os.path.join(BASE_DIR, "results.csv")
 
-    os.makedirs(BASE_DIR, exist_ok=True)
+    
 
     movies = scrape()
     write_books_to_csv(movies, CSV_PATH)
