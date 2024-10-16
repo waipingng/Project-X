@@ -5,22 +5,17 @@ from collections import Counter
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr
 
-# Ensure the 'artifacts' folder exists
+# Ensure the 'artifacts' folder exists (optional if it's already present)
 os.makedirs('artifacts', exist_ok=True)
 
 # Load the CSV file using a relative path
 df = pd.read_csv('artifacts/movies.csv')
 
-# Define a list of common stopwords to filter out
-STOPWORDS = {
-    "a", "the", "and", "of", "to", "in", "is", "with", "on", "for", "as", 
-    "by", "an", "at", "that", "it", "this", "from", "which", "or", "are", 
-    "be", "its", "was", "but", "not", "they", "his", "their", "has", "he", 
-    "she", "we", "you", "her", "them", "who", "one", "will", "can", "had",
-    "him","s","while","two","after","when","up","where","himself","other"
-}
+# Load stopwords from the stopwords file
+with open('artifacts/stopwords.txt', 'r') as f:
+    STOPWORDS = set(f.read().splitlines())
 
-# Function to clean text and split into words without using nltk
+# Function to clean text and split into words
 def clean_description(text):
     text = str(text).lower()  # Convert to lowercase
     text = re.sub(r'[^a-z\s]', '', text)  # Remove non-alphabetic characters
