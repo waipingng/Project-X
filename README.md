@@ -110,6 +110,11 @@ The data cleaning process included:
         Steven Spielberg: Spielberg had 5 movies in the Top 250, with notable films like Schindler’s List and Jurassic Park.
         Stanley Kubrick: Kubrick also appeared multiple times, with highly rated films like 2001: A Space Odyssey.
 
+4.4 Duration insights:
+
+    By categorizing movies based on their runtime and analyzing the average ratings, the study aims to understand whether longer movies tend to be rated higher by 
+    audiences, potentially indicating that longer runtimes allow for more developed plots and character arcs, contributing to higher satisfaction.
+
 5. Limitations
 
     Limited Dataset: This analysis was based solely on the IMDb Top 250 movies list, which primarily reflects the preferences of IMDb users. A more diverse dataset, including lesser-known movies, could provide different insights.
