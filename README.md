@@ -2,32 +2,28 @@ IMDb Top 250 Movies Analysis Report
 
 1. Introduction
 
-The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding trends in movie ratings and exploring how genres and ratings have evolved over time. The project aims to uncover insights regarding average ratings across genres and how movie ratings have changed throughout the years.
+The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding what can make a movie successful, for example, how can the movie company target their target viewers. The project aims to uncover insights regarding average ratings across genres and how movie ratings have changed throughout the years.
 
-IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, and video games, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb, scraped using the IMDbPY library in Python.
+IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, and video games, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb. Also, IMDb covers every latest movie to reflect the people's preferences.
 
 2. Data Source
 
 2.1 Dataset Source
 
-The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. To collect the data, we used the IMDbPY Python library, which provides a simple interface to interact with IMDb's database and retrieve detailed information about movies, TV shows, and other content.
-
-    Source URL: IMDb Top 250 Movies
-    Scraping Tool: IMDbPY (Python library)
-    Scraping Date: [Insert Date]
+The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. To collect the data, we use web scrape technique to collect the json data and define the relevant functions to grab the data we need to complete the analysis.
 
 2.2 Data Collection Methods
 
-The data was collected using the IMDbPY library, which allowed us to retrieve movie information directly from IMDb’s database. The data was collected for the top 250 movies, and the following attributes were scraped:
+The data was collected using the beautiful soup, which allowed us to grab movie information directly from IMDb’s database. The data was collected for the top 250 movies, and the following attributes were scraped:
 
     Rank: The movie's rank in the Top 250 list.
     Title: The movie's title.
     Year: The year the movie was released.
     Rating: The IMDb rating of the movie, provided by users.
     Genres: The genres associated with the movie (e.g., Drama, Action).
-    Director: The director(s) of the movie.
+    Description: The intorduction of the movie.
 
-Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file for further analysis.
+Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file and JSON file for further analysis.
 
 2.3 Understanding the Data
 
