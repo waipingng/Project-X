@@ -7,13 +7,9 @@ Created on Thu Oct 10 20:32:30 2024
 """
 
 from common import get_soup
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-}
 
 def get_title(soup):
     movie_name = soup.find_all("span", class_ = "hero__primary-text")[0].text
-    print(movie_name)
 
     return movie_name
 
@@ -52,6 +48,11 @@ def get_genre(soup):
     
     return genre
 
+def get_description(soup):
+    description = soup.find_all("span", attrs = {"data-testid": "plot-xs_to_m"})[0].text
+
+    return description
+
 
 def get_director(soup):
     movie_director = soup.find_all("div", class_ = "ipc-metadata-list-item__content-container")[4]
@@ -71,26 +72,55 @@ def get_num_user_reviews(soup):
     user_reviews= soup.find_all("a", class_ = "ipc-link ipc-link--baseAlt ipc-link--touch-target sc-b782214c-2 kqhWjl isReview")
     if len(user_reviews) < 3:
         num_user_reviews = user_reviews[0].find_all("span", class_ = "less-than-three-Elements")[0].text.split("U")[0]
-    else: 
+    else:
         num_user_reviews = user_reviews[0].find_all("span", class_ = "three-Elements")[0].text.split("U")[0]
 
     return num_user_reviews
 
+def get_movie_budget(soup):
+    if len(soup.find_all("div", attrs={"data-testid": "title-boxoffice-section"})) != 0:
+        movie_est_budget = soup.find_all("div", attrs = {"data-testid": "title-boxoffice-section"})[0]
+        if len(movie_est_budget.find_all("li", attrs = {"data-testid": "title-boxoffice-budget"})) != 0:
+            est_budget_raw = movie_est_budget.find_all("li", attrs = {"data-testid": "title-boxoffice-budget"})[0]
+            est_budget = est_budget_raw.find_all("span", class_ = "ipc-metadata-list-item__list-content-item")[0].text
+            est_budget = est_budget.split(" (")[0]
+        else:
+            est_budget = "N/A"
+    else:
+        est_budget = "N/A"
+    
+    return est_budget
 
+def get_movie_gross_worldwide(soup):
+    gross_worldwide_flag = False
+    if len(soup.find_all("div", attrs={"data-testid": "title-boxoffice-section"})) != 0:
+        movie_gross_world = soup.find_all("div", attrs = {"data-testid": "title-boxoffice-section"})[0]
+        if len(movie_gross_world.find_all("li", attrs = {"data-testid": "title-boxoffice-cumulativeworldwidegross"})) != 0:
+            gross_worldwide_raw = movie_gross_world.find_all("li", attrs = {"data-testid": "title-boxoffice-cumulativeworldwidegross"})[0]
+            gross_worldwide = gross_worldwide_raw.find_all("span", class_ = "ipc-metadata-list-item__list-content-item")[0].text
+
+        else:
+            gross_worldwide = "N/A"
+    else:
+        gross_worldwide = "N/A"
+
+    return gross_worldwide
 
 
 def scrape_movie(url, headers):
 
     soup = get_soup(url, headers = headers)
-    title = get_title(soup) 
-    year = get_year(soup) 
+    title = get_title(soup)
+    year = get_year(soup)
     movie_length = get_movie_length(soup)
     rating = get_rating(soup)
     genre = get_genre(soup)
+    description = get_description(soup)
     movie_director = get_director(soup)
     movie_top_casts = get_top_casts(soup)
     num_user_reviews = get_num_user_reviews(soup)
-
+    movie_budget = get_movie_budget(soup)
+    movie_gross_worldwide = get_movie_gross_worldwide(soup)
     
     scrape_top250_dict = {
         "title": title,
@@ -98,10 +128,12 @@ def scrape_movie(url, headers):
         "movie length": movie_length,
         "rating": rating,
         "genre": genre,
-        "movie director": movie_director, 
+        "description": description,
+        "movie director": movie_director,
         "movie top casts": movie_top_casts,
         "number of user reviews ": num_user_reviews,
-
+        "movie budget": movie_budget,
+        "movie gross worldwide": movie_gross_worldwide
     }
 
     return scrape_top250_dict
@@ -112,4 +144,3 @@ def scrape_movies(movie_urls, headers):
         scraped_movie = scrape_movie(movie_url, headers = headers)
         scrape_movies_info.append(scraped_movie)
     return scrape_movies_info
-
