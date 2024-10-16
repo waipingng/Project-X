@@ -29,8 +29,8 @@ def scrape_page():
     """Takes a page and returns a list of links to the book that are on the page."""
     soup = get_soup(url, headers)
     script_tag = soup.find("script", type = "application/ld+json")
-    json_data = json.loads(script_tag.string)   
-    movies = json_data["itemListElement"]                               
+    json_data = json.loads(script_tag.string)
+    movies = json_data["itemListElement"]
     movie_links = []
     for movie in movies:
         link = movie["item"].get("url")
