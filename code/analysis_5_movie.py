@@ -87,3 +87,6 @@ X_rating_count = sm.add_constant(X_rating)
 model_rating_count = sm.OLS(y_rating_count, X_rating_count).fit()
 print("\nImpact of Duration Range on Rating Count:")
 print(model_rating_count.summary())
+
+plt.savefig('artifacts/average_rating_count_by_duration.png')
+plt.close() 
