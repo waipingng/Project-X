@@ -11,7 +11,7 @@ This research aims to investigate four critical factors:
     The correlation between word frequencies in movie descriptions and IMDb ratings.
     The relationship between genres and IMDb ratings.
     The effect of movie duration on ratings.
-    How content ratings (e.g., PG, PG-13, R) affect the breadth of a movie’s audience and its correlation with ratings.
+    How film genres affect the breadth of a movie’s audience and the correlation between the audience's breadth and the ratings.
 
 By examining these factors, we aim to uncover patterns that can inform filmmakers, studios, and marketers on how to craft movies that resonate with audiences and maintain relevance over time.
 
@@ -91,10 +91,13 @@ The goal of this analysis is to investigate how different aspects of movies—su
 
 **3.3 Analysis Techniques**
 
-    Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
-    Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
-    Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience         reception.
-    Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
+Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
+
+Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
+
+Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience reception.
+
+Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
 
   **4. Findings**
     
@@ -117,56 +120,40 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 1. Words with Strong Positive Correlation:
 
-    "Young" (~0.15 correlation):
-        This word shows the strongest positive correlation with ratings. It suggests that movies where "young" appears frequently in the description (perhaps focusing on younger characters or youth-related themes) tend to receive higher IMDb ratings.
-        Examples could be films like The Lion King or Harry Potter, where youth and coming-of-age narratives play a central role.
+"Young" (~0.15 correlation):This word shows the strongest positive correlation with ratings. It suggests that movies where "young" appears frequently in the description (perhaps focusing on younger characters or youth-related themes) tend to receive higher IMDb ratings.Examples could be films like The Lion King or Harry Potter, where youth and coming-of-age narratives play a central role.
 
-    "American" (~0.11 correlation):
-        The word "American" also shows a high positive correlation. This may suggest that movies centering around American culture, identity, or historical events tend to be highly rated.
-        Examples might include films about American history (Saving Private Ryan), the American Dream, or stories set in the US.
+"American" (~0.11 correlation):The word "American" also shows a high positive correlation. This may suggest that movies centering around American culture, identity, or historical events tend to be highly rated.Examples might include films about American history (Saving Private Ryan), the American Dream, or stories set in the US.
 
-    "Son" (~0.08 correlation):
-        Descriptions that include "son" tend to be correlated with higher ratings. This could reflect the success of family-focused movies or stories involving father-son relationships. Emotional family dynamics often resonate well with audiences.
+"Son" (~0.08 correlation):Descriptions that include "son" tend to be correlated with higher ratings. This could reflect the success of family-focused movies or stories involving father-son relationships. Emotional family dynamics often resonate well with audiences.
 
-    "Police" (~0.05 correlation):
-        Movies with a focus on law enforcement or crime-solving seem to perform well. Crime dramas or thrillers where "police" play a central role might often receive favorable reviews, possibly because of their suspenseful nature.
+"Police" (~0.05 correlation):Movies with a focus on law enforcement or crime-solving seem to perform well. Crime dramas or thrillers where "police" play a central role might often receive favorable reviews, possibly because of their suspenseful nature.
 
 2. Words with Negative Correlation:
 
-    "Struggles" (~ -0.07 correlation):
-        The word "struggles" shows a negative correlation with ratings, which suggests that movies that focus on difficult situations or challenges might not be as highly rated. While conflict is essential for storytelling, perhaps movies emphasizing hardship too heavily don't resonate as positively.
+"Struggles" (~ -0.07 correlation):The word "struggles" shows a negative correlation with ratings, which suggests that movies that focus on difficult situations or challenges might not be as highly rated. While conflict is essential for storytelling, perhaps movies emphasizing hardship too heavily don't resonate as positively.
 
-    "War" (~ -0.04 correlation):
-        Surprisingly, "war" shows a slight negative correlation. This could be attributed to mixed audience reception of war films. While some war movies are critically acclaimed (Saving Private Ryan), others may not resonate as well with broader audiences, depending on the narrative's focus.
+"War" (~ -0.04 correlation):Surprisingly, "war" shows a slight negative correlation. This could be attributed to mixed audience reception of war films. While some war movies are critically acclaimed (Saving Private Ryan), others may not resonate as well with broader audiences, depending on the narrative's focus.
 
-    "Jewish" (~ -0.05 correlation):
-        The word "Jewish" shows a negative correlation. This might be related to the fact that movies centering around specific cultural or religious groups may have niche appeal and may not resonate as strongly with a wider audience. This is not indicative of quality but might reflect broader audience preferences.
+"Jewish" (~ -0.05 correlation):The word "Jewish" shows a negative correlation. This might be related to the fact that movies centering around specific cultural or religious groups may have niche appeal and may not resonate as strongly with a wider audience. This is not indicative of quality but might reflect broader audience preferences.
 
-    "Relationship" (~ -0.05 correlation):
-        Surprisingly, "relationship" correlates negatively with ratings. This suggests that movies heavily marketed as focusing on relationships (especially romantic ones) may not always result in high IMDb scores, potentially reflecting oversaturation in certain genres (romantic comedies, dramas, etc.).
+"Relationship" (~ -0.05 correlation):Surprisingly, "relationship" correlates negatively with ratings. This suggests that movies heavily marketed as focusing on relationships (especially romantic ones) may not always result in high IMDb scores, potentially reflecting oversaturation in certain genres (romantic comedies, dramas, etc.).
 
 3. Neutral or Near-Zero Correlation:
 
-    "Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):
-
-        These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.
-
-        For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
+"Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
 **4.3 Duration insights:**
 
 ![image](https://github.com/user-attachments/assets/8be2b623-c2b8-401b-bf1a-feffcd7a8fae)
 
 
-    The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less 
-    common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are 
-    associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion 
-    in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
+The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less  common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
 **4.4 Content Rating and Audience Reach**
 
-    Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
-    Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
+Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
+
+Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
 
 **5. Limitations**
 
