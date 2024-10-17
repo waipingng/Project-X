@@ -21,7 +21,7 @@ def categorize_length(total_minutes):
         return 'long'
 
 # Step 1: Load the CSV file
-df = pd.read_csv('movies.csv')
+df = pd.read_csv('artifacts/movies.csv')
 
 # Step 2: Parse the duration column and categorize movie length
 df['total_minutes'] = df['duration'].apply(parse_duration)
