@@ -17,13 +17,14 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
 **1.1 Instruction to rerun the file**
 
-    a) Implement scrape_movie by python3 code/scrape_movies.csv: The function scrape_movie scrapes detailed information about a specific movie given its IMDb URL. The function extracts the movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross.
+    a) Implement scrape.py by python3 code/scrape.py: We run common.py first to make URL(soup) to construct url to extract data. Also, you can use your own user agent to scrape the page. So, several functions are provided in the scrape_movies.py to extract specific information from the IMDb movie page such as movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross and save to a csv file
 
-    b) Implement scrape_page by python3 code/common.py: The function scrape_page scrapes all the movie URLs from the IMDb Top 250 page. It returns a list of movie URLs that will later be used by the scrape_movies function.
+    b) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
 
-    c) Implement scrape.py by python3 code/scrape.py:Several functions are provided to extract specific information from the IMDb movie page and save to a csv file
+    c) implement genres function:to get the corelationo between genres and IMDb ratings.
 
-    d) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
+    d) implement the duration function to get the relationship with duration and ratings
+
 
     e) implement genres function:to get the corelationo between genres and IMDb ratings.
 
@@ -38,6 +39,7 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
     j)implement graph_breadth_rate.py by python3 code/graph_breadth_rate.py : draw the graph of the correlation between the audience's breadth and the ratings 
 
     
+
 
 **2. Data Source**
 
@@ -58,6 +60,8 @@ The dataset used in this analysis was sourced from IMDb’s Top 250 Movies list.
     Casts: The names of stars
     Estimated budget: The cost of making the movie
     Gross worlwide: The revenue from releasing movie to movie theaters
+    Rating counts: The number of viewers who leave ratings
+    Content rating: The category of the movie targets for
 
 Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file for further analysis.
 
@@ -99,14 +103,19 @@ The goal of this analysis is to investigate how different aspects of movies—su
 
 **3.3 Analysis Techniques**
 
-    Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
-    Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
-    Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience         reception.
-    Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
+Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
+
+Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
+
+Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience reception.
+
+Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
 
   **4. Findings**
     
 **4.1 Average Rating by Genre**
+
+Are certain genres more likely to have higher ratings?
 
     Genres with the Highest Average Ratings:
         Documentary: 9.0 (appeared less frequently but had high average ratings).
@@ -120,56 +129,45 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 **4.2 Word Frequencies in description and IMDb Ratings**
 
+ Do certain words in movie descriptions correlate with higher ratings?
+
 ![image](https://github.com/user-attachments/assets/e5ff057a-0abc-4476-bb8c-e31ac20d5597)
 
 
 1. Words with Strong Positive Correlation:
 
-    "Young" (~0.15 correlation):
-        This word shows the strongest positive correlation with ratings. It suggests that movies where "young" appears frequently in the description (perhaps focusing on younger characters or youth-related themes) tend to receive higher IMDb ratings.
-        Examples could be films like The Lion King or Harry Potter, where youth and coming-of-age narratives play a central role.
+"Young" (~0.15 correlation):This word shows the strongest positive correlation with ratings. It suggests that movies where "young" appears frequently in the description (perhaps focusing on younger characters or youth-related themes) tend to receive higher IMDb ratings.Examples could be films like The Lion King or Harry Potter, where youth and coming-of-age narratives play a central role.
 
-    "American" (~0.11 correlation):
-        The word "American" also shows a high positive correlation. This may suggest that movies centering around American culture, identity, or historical events tend to be highly rated.
-        Examples might include films about American history (Saving Private Ryan), the American Dream, or stories set in the US.
+"American" (~0.11 correlation):The word "American" also shows a high positive correlation. This may suggest that movies centering around American culture, identity, or historical events tend to be highly rated.Examples might include films about American history (Saving Private Ryan), the American Dream, or stories set in the US.
 
-    "Son" (~0.08 correlation):
-        Descriptions that include "son" tend to be correlated with higher ratings. This could reflect the success of family-focused movies or stories involving father-son relationships. Emotional family dynamics often resonate well with audiences.
+"Son" (~0.08 correlation):Descriptions that include "son" tend to be correlated with higher ratings. This could reflect the success of family-focused movies or stories involving father-son relationships. Emotional family dynamics often resonate well with audiences.
 
-    "Police" (~0.05 correlation):
-        Movies with a focus on law enforcement or crime-solving seem to perform well. Crime dramas or thrillers where "police" play a central role might often receive favorable reviews, possibly because of their suspenseful nature.
+"Police" (~0.05 correlation):Movies with a focus on law enforcement or crime-solving seem to perform well. Crime dramas or thrillers where "police" play a central role might often receive favorable reviews, possibly because of their suspenseful nature.
 
 2. Words with Negative Correlation:
 
-    "Struggles" (~ -0.07 correlation):
-        The word "struggles" shows a negative correlation with ratings, which suggests that movies that focus on difficult situations or challenges might not be as highly rated. While conflict is essential for storytelling, perhaps movies emphasizing hardship too heavily don't resonate as positively.
+"Struggles" (~ -0.07 correlation):The word "struggles" shows a negative correlation with ratings, which suggests that movies that focus on difficult situations or challenges might not be as highly rated. While conflict is essential for storytelling, perhaps movies emphasizing hardship too heavily don't resonate as positively.
 
-    "War" (~ -0.04 correlation):
-        Surprisingly, "war" shows a slight negative correlation. This could be attributed to mixed audience reception of war films. While some war movies are critically acclaimed (Saving Private Ryan), others may not resonate as well with broader audiences, depending on the narrative's focus.
+"War" (~ -0.04 correlation):Surprisingly, "war" shows a slight negative correlation. This could be attributed to mixed audience reception of war films. While some war movies are critically acclaimed (Saving Private Ryan), others may not resonate as well with broader audiences, depending on the narrative's focus.
 
-    "Jewish" (~ -0.05 correlation):
-        The word "Jewish" shows a negative correlation. This might be related to the fact that movies centering around specific cultural or religious groups may have niche appeal and may not resonate as strongly with a wider audience. This is not indicative of quality but might reflect broader audience preferences.
+"Jewish" (~ -0.05 correlation):The word "Jewish" shows a negative correlation. This might be related to the fact that movies centering around specific cultural or religious groups may have niche appeal and may not resonate as strongly with a wider audience. This is not indicative of quality but might reflect broader audience preferences.
 
-    "Relationship" (~ -0.05 correlation):
-        Surprisingly, "relationship" correlates negatively with ratings. This suggests that movies heavily marketed as focusing on relationships (especially romantic ones) may not always result in high IMDb scores, potentially reflecting oversaturation in certain genres (romantic comedies, dramas, etc.).
+"Relationship" (~ -0.05 correlation):Surprisingly, "relationship" correlates negatively with ratings. This suggests that movies heavily marketed as focusing on relationships (especially romantic ones) may not always result in high IMDb scores, potentially reflecting oversaturation in certain genres (romantic comedies, dramas, etc.).
 
 3. Neutral or Near-Zero Correlation:
 
-    "Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):
+"Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
-        These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.
-
-        For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
+Therefore, we do find out that certain words in movie descriptions do correlate with higher ratings. Words associated with youth, family, and cultural identity (e.g., "young," "American," and "son") show a positive correlation with IMDb ratings, indicating that these themes resonate strongly with audiences. Conversely, words related to conflict and hardship (e.g., "struggles," "war") correlate negatively with ratings, suggesting that movies heavily emphasizing these themes may not connect as deeply with viewers. Words that are common across many genres, such as "love" and "life," tend to show no significant correlation, reflecting their broad and variable use in storytelling.
 
 **4.3 Duration insights:**
+
+Does movie length affect its IMDb rating?
 
 ![image](https://github.com/user-attachments/assets/8be2b623-c2b8-401b-bf1a-feffcd7a8fae)
 
 
-    The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less 
-    common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are 
-    associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion 
-    in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
+The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less  common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
 **4.4 Content Rating and Audience Reach**
 ![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/genre_audience_breadth_table_vertical.png)
@@ -183,6 +181,12 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 ![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/rate_audience_breadth.png)
     whether make the film in the narrower film genre is totally the terrible thing ? seems that's not, since from our graph we can see that films with the high rates(8.8-9.3) are limited to R,PG-13and approved films.
     So if the film you make has the content rating of R , you may have the narrow audience reach but higher film rate.
+Does the content rating affect the film’s rating based on audience size?
+
+Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
+
+Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
+
 
 **5. Limitations**
 
