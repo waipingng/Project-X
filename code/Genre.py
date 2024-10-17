@@ -2,7 +2,7 @@ import pandas as pd
 from collections import Counter
 
 # Step 1: Load the CSV file
-df = pd.read_csv('movies.csv')
+df = pd.read_csv('artifacts/results.csv')
 
 # Step 2: Split the genres column, remove spaces, and convert to lowercase
 all_genres = df['genre'].str.split(',').explode().str.strip().str.lower()
