@@ -144,10 +144,17 @@ Therefore, we do find out that certain words in movie descriptions do correlate 
 
 Does movie length affect its IMDb rating?
 
-![image](https://github.com/user-attachments/assets/8be2b623-c2b8-401b-bf1a-feffcd7a8fae)
+Does movie length affect its IMDb rating?
 
+![image](https://github.com/user-attachments/assets/72e21adf-d4f2-459b-960d-b6682fe9b8ee)
 
-The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less  common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
+The box plot above illustrates the distribution of IMDb ratings based on three categories of movie lengths: short (less than 90 mins), medium (90-150 mins), and long (above 150 mins). Long movies show a notably higher median rating, around 8.5, compared to their shorter counterparts. This suggests that longer films tend to achieve more favorable ratings, potentially because they have the time to delve into complex narratives, develop characters more fully, and create immersive experiences that resonate with viewers. The ratings of long movies, while varied, maintain a relatively high range, and a few outliers reach ratings above 9.0. These outliers indicate that when executed well, long films can achieve critical acclaim and high audience ratings.
+
+In contrast, medium-length movies have a median rating slightly lower than long films, approximately 8.3. While they do not reach the same consistent heights as longer movies, their ratings are still solid. The interquartile range (IQR) for medium-length films spans from 8.0 to 8.6, showing a stable pattern, though with less variability compared to long films. This suggests that while medium-length films are capable of achieving high ratings, the scope for achieving the same level of deep narrative engagement as longer movies might be somewhat constrained. However, the presence of a few highly-rated outliers above 9.0 indicates that certain medium-length films can still resonate exceptionally well with audiences.
+
+Short movies, meanwhile, tend to receive lower ratings overall, with a median of around 8.1, which is notably below that of both medium and long films. The IQR for short movies is more compressed, ranging from 8.0 to 8.3, indicating less variability in their ratings. This suggests that while short films tend to deliver a consistent viewer experience, their limited length may restrict their ability to fully develop complex stories or characters, which could be a factor in their generally lower ratings. However, the presence of an outlier above 8.8 shows that while most short movies may not achieve the same acclaim as longer films, there are exceptions that manage to captivate audiences and garner high ratings.
+
+Overall, the analysis indicates a clear trend where longer movies tend to be rated higher on IMDb, likely due to their ability to provide more depth and richness in storytelling. Medium-length films also maintain strong ratings but do not reach the same level of acclaim as often as longer films. Short movies, while typically receiving lower ratings, still have the potential to impress viewers with the right content. This suggests that while longer films may have an inherent advantage in achieving higher ratings, the quality and execution of a film's content remain crucial for its success, regardless of length.
 
 **4.4 Content Rating and Audience Reach**
 
