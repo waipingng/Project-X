@@ -17,7 +17,7 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
 **1.1 Instruction to rerun the file**
 
-    a) Implement scrape.py by python3 code/scrape.py: We run common.py first to make URL(soup) to construct url to extract data. So, several functions are provided in the scrape_movies.py to extract specific information from the IMDb movie page such as movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross and save to a csv file
+    a) Implement scrape.py by python3 code/scrape.py: We run common.py first to make URL(soup) to construct url to extract data. Also, you can use your own user agent to scrape the page. So, several functions are provided in the scrape_movies.py to extract specific information from the IMDb movie page such as movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross and save to a csv file
 
     b) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
 
