@@ -29,7 +29,15 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
     f) implement the duration function to get the relationship with duration and ratings
 
-    g) implement the content ranting function to see how broad are the audiences and its relationship with the IMDb ratings.
+    g) genre_audience_breadth_code.py by python3 code/genre_audience_breadth_code.py: figure out the coding part of  the relationship of film genres and the breadth of a movie’s audience and save to the new csv file
+
+    h)implement graph_genre_breadth.py by python3 code/graph_genre_breadth.py : draw the graph of the relationship between film genres and the breadth of a movie’s audience 
+
+    i)implement breadth_rate_code.py by python3 code/breadth_rate_code.py : the coding part of the correlation between the audience's breadth and the ratings and save to the new csv file
+
+    j)implement graph_breadth_rate.py by python3 code/graph_breadth_rate.py : draw the graph of the correlation between the audience's breadth and the ratings 
+
+    
 
 **2. Data Source**
 
