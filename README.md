@@ -91,10 +91,13 @@ The goal of this analysis is to investigate how different aspects of movies—su
 
 **3.3 Analysis Techniques**
 
-#Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
-#Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
-#Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience reception.
-#Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
+Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
+
+Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
+
+Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience reception.
+
+Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
 
   **4. Findings**
     
