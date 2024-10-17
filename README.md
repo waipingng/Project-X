@@ -146,6 +146,8 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 "Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
+certain words in movie descriptions do correlate with higher ratings. Words associated with youth, family, and cultural identity (e.g., "young," "American," and "son") show a positive correlation with IMDb ratings, indicating that these themes resonate strongly with audiences. Conversely, words related to conflict and hardship (e.g., "struggles," "war") correlate negatively with ratings, suggesting that movies heavily emphasizing these themes may not connect as deeply with viewers. Words that are common across many genres, such as "love" and "life," tend to show no significant correlation, reflecting their broad and variable use in storytelling.
+
 **4.3 Duration insights:**
 
 Does movie length affect its IMDb rating?
