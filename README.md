@@ -1,32 +1,45 @@
-IMDb Top 250 Movies Analysis Report: How can make movie last longer?
+IMDb Top 250 Movies Analysis Report: What Contributes to High Ratings and Long-Term Success?
 
 1. Introduction
 
 IMDb (Internet Movie Database) is a widely used online resource for information related to films, television programs, making it an ideal source for movie-related data. For this project, we specifically worked with the Top 250 movies on IMDb. Also, IMDb covers every latest movie to reflect the people's preferences. So, we would like to discover what types of movie can get higher rating and what makes the movies keep attracting viewers' attention.
 
-The purpose of this project is to analyze data from the IMDb Top 250 movies list, with a focus on understanding what can make a movie successful, for example, how can the movie company target their target viewers. The project aims to uncover insights regarding average ratings across genres and how movie ratings reflect people's preferences.
+Purpose of the Research
+
+This research aims to investigate four critical factors:
+
+    The correlation between word frequencies in movie descriptions and IMDb ratings.
+    The relationship between genres and IMDb ratings.
+    The effect of movie duration on ratings.
+    How content ratings (e.g., PG, PG-13, R) affect the breadth of a movie’s audience and its correlation with ratings.
+
+By examining these factors, we aim to uncover patterns that can inform filmmakers, studios, and marketers on how to craft movies that resonate with audiences and maintain relevance over time.
 
 1.1 Instruction to rerun the file
 
-a) Implement scrape_movie by python3 code/scrape_movies.csv: The function scrape_movie scrapes detailed information about a specific movie given its IMDb URL. The function extracts the movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross.
+    a) Implement scrape_movie by python3 code/scrape_movies.csv: The function scrape_movie scrapes detailed information about a specific movie given its IMDb URL. The function extracts the movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross.
 
-b) Implement scrape_page by python3 code/common.py: The function scrape_page scrapes all the movie URLs from the IMDb Top 250 page. It returns a list of movie URLs that will later be used by the scrape_movies function.
+    b) Implement scrape_page by python3 code/common.py: The function scrape_page scrapes all the movie URLs from the IMDb Top 250 page. It returns a list of movie URLs that will later be used by the scrape_movies function.
 
-c) Implement scrape.py by python3 code/scrape.py:Several functions are provided to extract specific information from the IMDb movie page and save to a csv file
+    c) Implement scrape.py by python3 code/scrape.py:Several functions are provided to extract specific information from the IMDb movie page and save to a csv file
 
-d) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
+    d) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
+
+    e) implement genres function:to get the corelationo between genres and IMDb ratings.
+
+    f) implement the duration function to get the relationship with duration and ratings
+
+    g) implement the content ranting function to see how broad are the audiences and its relationship with the IMDb ratings.
 
 2. Data Source
 
 2.1 Dataset Source
 
-The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. We also believe top 250 movies can capture people's likes and dislikes about movies and provide enough infomation for analyzing what can make movies successful. Moreover, IMDb has fairly wide databases containing wide range of movies and the viewers' ratings and reviews can replect how this movie stay in a high rating. To collect the data, we use web scrape techniques to collect the json data and define the relevant functions to grab the data we need to complete the analysis such as casts, description, and estimated budget.
+The data for this project was sourced from IMDb’s Top 250 movies list. This list is publicly available on IMDb and ranks the top 250 movies based on user ratings. We also believe top 250 movies can capture people's likes and dislikes about movies and provide enough infomation for analyzing what can make movies successful. Moreover, IMDb has fairly wide databases containing wide range of movies and the viewers' ratings and reviews can replect how this movie stay in a high rating. To collect the data, we use web scrape techniques to collect the json data and define the relevant functions to grab the data we need to complete the analysis such as genres, description, content-rating and duration.
 
 2.2 Data Collection
 
-To collect the data, we use web scrape techniques to collect the json data and define the relevant functions to grab the data we need to complete the analysis such as casts, description, and estimated budget. During the process, using the beautiful soup allows us to grab movie information directly from IMDb’s database. 
-
-The data was collected for the top 250 movies, and the following attributes were scraped:
+The dataset used in this analysis was sourced from IMDb’s Top 250 Movies list. This list ranks the top 250 movies based on user ratings and is widely recognized as a credible reflection of audience preferences. The data was gathered using web scraping techniques from IMDb’s public listings. The data collected includes:
 
     Rank: The movie's rank in the Top 250 list
     Title: The movie's title
@@ -40,46 +53,47 @@ The data was collected for the top 250 movies, and the following attributes were
 
 Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file for further analysis.
 
-2.3 Data Limitations
+2.3 Limitations of the Data
 
-Some movies in the Top 250 list may not have complete information. For example:
+Despite its richness, the dataset has some limitations:
 
-    1. Ratings: Some movies may lack sufficient user ratings, leading to missing or incomplete data. Also, some movie has higher reputation in people's mind,but the viewers are not willing to reveal their thought in IMDb website.
-    2. Genres: Some movies may have incomplete genre classification which can makes some movies has same genre tags have different ranking.
-    3. Subjective Ratings: The IMDb ratings are subjective and are based on user votes, which can be influenced by factors such as recency bias or popularity.
-    4. Popularity Bias: The Top 250 list reflects popular and well-known movies, so lesser-known or independent films may be underrepresented.
+    1. Subjective Ratings: IMDb ratings are user-generated and are thus inherently subjective. Factors like recency bias (newer movies being rated higher) and popularity bias (more popular movies being rated by more people) can skew the results.
+    2. Missing Data: Some movies may have incomplete information, particularly for older films that may not have detailed content ratings or full cast lists.
+    3. Genre Ambiguity: Some films belong to multiple genres, which can create ambiguity when analyzing how specific genres correlate with ratings.
+    4. Lack of Contextual Data: The dataset does not contain detailed information such as release date timing, promotional campaigns, or critical reception, which could also influence ratings.
 
-2.4 Possible Extensions
+2.4 Suggested Extensions to Improve the Analysis
 
-To improve the dataset and further analysis, the following extensions could be considered:
+To improve the quality of the analysis, the following data could be added:
 
-    1. Inclusion of Cast Information: For exampl, the details for the cast members, so we can analyse how diversity affects movies in a more detailed way.
-    2. User Review Sentiment Analysis: Scraping user reviews to capture some keywords for people's feelings could provide more in-depth insights into why some movies are rated highly.
-    3. Comparing with Other Platforms: Adding data from other review platforms, for instance, Rotten Tomatoes would allow for cross-platform comparisons becasue it also contains the rating from professional critics and the popularity from the audiences.
-
-3. Analysis Methodology
-
+    1. User Reviews: Including user review text would allow for sentiment analysis, providing deeper insights into how viewers perceive the film.
+    2. Budget and Box Office Data: Understanding the movie’s budget and gross income could provide insights into how financial success correlates with ratings.
+    3. Cross-Platform Ratings: Gathering ratings from other platforms like Rotten Tomatoes or Metacritic could provide a broader perspective and allow comparisons between critic and audience scores.
+    4. Director and Actor Information: Analyzing the impact of certain directors and actors on ratings could provide insights into how these figures influence audience perception.
+    
+3. Methodology
 3.1 Goal of the Analysis
 
-The primary goal of this analysis is to explore trends in movie ratings and genres within the IMDb Top 250 movies list. Specifically, we aim to:
+The goal of this analysis is to investigate how different aspects of movies—such as the themes represented in descriptions, genres, duration, and content ratings—affect their IMDb scores. We seek to answer the following research questions:
 
-    Calculate the average rating for each genre.
-    Explore how IMDb ratings have changed over time by analyzing the ratings by year of release.
-    Identify trends regarding directors and their presence in the Top 250 list.
+    Do certain words in movie descriptions correlate with higher ratings?
+    Are certain genres more likely to have higher ratings?
+    Does movie length affect its IMDb rating?
+    Does the content rating affect the film’s rating based on audience size?
 
-3.2 Data Cleaning
+3.2 Data Preparation and Cleaning
 
-The data cleaning process included:
-
-    Handling Missing Ratings: Rows where the IMDb rating was missing were removed.
-    Genre Cleaning: The genre column was cleaned by splitting multiple genres and removing extra spaces.
-    Type Conversion: The ratings were converted to numeric values to allow for statistical analysis.
+    Word Cleaning for Descriptions: The descriptions were cleaned by removing common stopwords (e.g., "the", "and") to focus on meaningful keywords.
+    Handling Missing Data: Movies with missing key information, such as ratings or descriptions, were excluded from the analysis.
+    Genre Processing: Movies with multiple genres were processed to ensure each genre was analyzed separately.
+    Type Conversion: All relevant fields, such as ratings and durations, were converted into numerical formats to allow for statistical analysis.
 
 3.3 Analysis Techniques
 
-    Average Rating by Genre: We exploded the genre column, creating separate rows for each genre associated with a movie. Then, we grouped the data by genre and calculated the average IMDb rating for each genre.
-    Trend Analysis (Rating Over Time): We grouped movies by their release year and calculated the average rating for each year. This allowed us to visualize how IMDb ratings have changed over time.
-    Director Analysis: We identified which directors appeared most frequently in the Top 250 list and explored whether certain directors tend to produce highly rated movies.
+    Correlation Analysis: We used the Pearson correlation coefficient to examine how word frequencies in movie descriptions relate to IMDb ratings.
+    Genre Analysis: The dataset was grouped by genre, and the average rating for each genre was calculated to understand how different genres perform.
+    Duration Analysis: We explored the relationship between movie length and IMDb ratings to identify any trends in how runtime affects audience         reception.
+    Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG-13, R) impact IMDb scores, hypothesizing that broader audience ratings would correlate with higher scores.
 
     4. Findings
     
@@ -138,27 +152,26 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
         For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
-4.3 Director Insights
-
-    Directors with the Most Movies in the Top 250:
-        Christopher Nolan: Known for movies like Inception and The Dark Knight, Nolan had 7 movies in the Top 250, with an average rating of 8.9.
-        Steven Spielberg: Spielberg had 5 movies in the Top 250, with notable films like Schindler’s List and Jurassic Park.
-        Stanley Kubrick: Kubrick also appeared multiple times, with highly rated films like 2001: A Space Odyssey.
-
-4.4 Duration insights:
+4.3 Duration insights:
 
     The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less 
     common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are 
     associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion 
     in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
+4.4 Content Rating and Audience Reach
+
+    Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
+    Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
+
 5. Limitations
 
-    Limited Dataset: This analysis was based solely on the IMDb Top 250 movies list, which primarily reflects the preferences of IMDb users. A more diverse dataset, including lesser-known movies, could provide different insights.
-    Recency Bias: More recent movies may receive higher ratings due to their popularity and current relevance.
-    IMDb User Demographics: IMDb users are not necessarily representative of the general population, and their ratings may be skewed by certain demographics or interests.
+    Subjectivity of Ratings: IMDb ratings are subjective and based on user opinions. Factors like recency bias and popularity bias may skew the data.
+    Genre Ambiguity: Some movies belong to multiple genres, which complicates analyzing how specific genres alone affect ratings.
+    Limited Dataset Scope: The Top 250 list is a subset of all movies and reflects mainstream preferences. Independent or lesser-known films are underrepresented.
 
 6. Extensions and Future Research
 
-    Sentiment Analysis of User Reviews: Analyzing the sentiment behind user reviews could provide more context behind why certain movies are rated highly or poorly.
-    **Comparison with Other Rating
+    Sentiment Analysis of User Reviews: Analyzing review text could provide deeper insights into why audiences rate certain movies highly or poorly.
+    Incorporating Financial Data: Adding data such as budget and box office performance could reveal whether financial success correlates with audience satisfaction.
+    Director and Actor Analysis: Understanding the influence of key filmmakers and stars on movie ratings could shed light on star power’s impact on success.
