@@ -27,6 +27,8 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
     e) implement genre_audience_breadth_code.py by python3 code/genre_audience_breadth_code.py: figure out the coding part of  the relationship of film genres and the breadth of a movie’s audience and save to the new csv file; implement graph_genre_breadth.py by python3 code/graph_genre_breadth.py : draw the graph of the relationship between film genres and the breadth of a movie’s audience; implement breadth_rate_code.py by python3 code/breadth_rate_code.py : the coding part of the correlation between the audience's breadth and the ratings and save to the new csv file; implement graph_breadth_rate.py by python3 code/graph_breadth_rate.py : draw the graph of the correlation between the audience's breadth and the ratings 
 
+
+   
 **2. Data Source**
 
 **2.1 Dataset Source**
@@ -159,15 +161,17 @@ The "Frequency of Movie Length Categories" graph shows that long movies dominate
 
 Does Content Rating Affect a Film’s Rating Based on Audience Size?
 
-![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/genre_audience_breadth_table_vertical.png)
+![image](https://raw.githubusercontent.com/waipingng/Project-X/refs/heads/main/artifacts/genre_audience_breadth_table_part1.png)
+![image](https://raw.githubusercontent.com/waipingng/Project-X/refs/heads/main/artifacts/genre_audience_breadth_table_part2.png)
+My values in the graph are rounded to the nearest whole percentage
+The content rating of a movie plays a crucial role in determining its potential audience reach. Content ratings like "Approved" or "G" indicate that a film is suitable for all ages, making it accessible to a broader audience, including families and young viewers. Analysis of our dataset reveals that certain genres have a higher proportion of movies with these inclusive ratings. For example, Parody (50% "G"), Anime (50% "G"), and slapstick (100% "G") are more likely to have content suitable for general audiences. Producing films in these genres can attract a diverse audience base, from children to adults, offering the potential for widespread popularity.
 
-The content rating of a movie plays a crucial role in determining its potential audience reach. Content ratings like "Approved" or "G" indicate that a film is suitable for all ages, making it accessible to a broader audience, including families and young viewers. Analysis of our dataset reveals that certain genres have a higher proportion of movies with these inclusive ratings. For example, Film-Noir (100% "Approved"), Musical (100% "G"), Animation (36% "G"), and Family (38% "G") are more likely to have content suitable for general audiences. Producing films in these genres can attract a diverse audience base, from children to adults, offering the potential for widespread popularity.
-
-In contrast, R and NC-17 ratings restrict viewership to adults, significantly narrowing the potential audience. Our analysis shows that genres such as Biography, Crime, History, Horror, Sci-Fi, Thriller, and Western tend to have a higher proportion of films with an "R" rating. These genres often contain mature themes, violence, or intense content that limits their audience to adults. As a result, while these films might appeal strongly to a specific demographic, they generally lack the broad audience reach of family-friendly films.
+In contrast, R rating restrict viewership to adults, significantly narrowing the potential audience. Our analysis shows that genres such as Cyberpunk, Docudrama, Samurai,Satire tend to have a higher proportion of films with an "R" rating. These genres often contain mature themes, violence, or intense content that limits their audience to adults. As a result, while these films might appeal strongly to a specific demographic, they generally lack the broad audience reach of family-friendly films.
     
 ![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/rate_audience_breadth.png)
 
-While it might seem that having a restricted audience reach would be a disadvantage, our analysis suggests that it’s not always the case. From the graph, we observe that films with the highest IMDb ratings (8.8-9.3) are often R-rated, PG-13, or Approved films. This indicates that despite a narrower potential audience, R-rated films can achieve high critical acclaim and resonate deeply with their viewers. Films like Pulp Fiction or The Shawshank Redemption are examples of R-rated movies that have received outstanding ratings despite their limited audience.
+
+hile it might seem that having a restricted audience reach would be a disadvantage, our analysis suggests that it’s not always the case. From the graph, we observe that films with the highest IMDb ratings (8.8-9.3) are often R-rated, PG-13, or Approved films. This indicates that despite a narrower potential audience, R-rated films can achieve high critical acclaim and resonate deeply with their viewers. Films like Pulp Fiction or The Shawshank Redemption are examples of R-rated movies that have received outstanding ratings despite their limited audience.
 
 PG and PG-13 movies, on the other hand, tend to perform well because they appeal to a broader range of viewers, including families and teenagers. This wider appeal allows these films to gather more ratings and potentially maintain high overall scores. PG-13 movies such as Star Wars and Harry Potter demonstrate how balancing engaging content with family-friendly themes can attract large audiences while still achieving high ratings.
 

@@ -57,7 +57,7 @@ for (i, j), cell in table2.get_celld().items():
         cell.set_height(0.15)  
 
 # Step 10: Add footnote indicating values are percentages
-plt.figtext(0.5, 0.01, 'Note: Values are percentages (%)', ha='center', fontsize=12)
+plt.figtext(0.5, 0.01, 'Note: Values are percentages (%),My values in the graph are rounded to the nearest whole percentage', ha='center', fontsize=12)
 
 # Step 11: Save the second part
 plt.title('Relationship between Genre and Audience Breadth by Content Rating (Part 2)', fontsize=14, pad=20)
