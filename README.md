@@ -172,9 +172,11 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
     in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
 **4.4 Content Rating and Audience Reach**
-
+![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/genre_audience_breadth_table_vertical.png)
     Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
     Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
+
+**4.5 Content Rating and Audience Reach**
 
 **5. Limitations**
 
