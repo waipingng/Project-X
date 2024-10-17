@@ -17,19 +17,15 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
 **1.1 Instruction to rerun the file**
 
-    a) Implement scrape_movie by python3 code/scrape_movies.csv: The function scrape_movie scrapes detailed information about a specific movie given its IMDb URL. The function extracts the movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross.
+    a) Implement scrape.py by python3 code/scrape.py: We run common.py first to make URL(soup) to construct url to extract data. So, several functions are provided in the scrape_movies.py to extract specific information from the IMDb movie page such as movie title, year, runtime, rating, genre, description, director, cast, user reviews, budget, and worldwide gross and save to a csv file
 
-    b) Implement scrape_page by python3 code/common.py: The function scrape_page scrapes all the movie URLs from the IMDb Top 250 page. It returns a list of movie URLs that will later be used by the scrape_movies function.
+    b) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
 
-    c) Implement scrape.py by python3 code/scrape.py:Several functions are provided to extract specific information from the IMDb movie page and save to a csv file
+    c) implement genres function:to get the corelationo between genres and IMDb ratings.
 
-    d) implement common_word_ratings by python 3 code/common_word_ratings.csv: first by function def clean_description, we got clean words from the description and then compute correlation of word frequencies with ratings.
+    d) implement the duration function to get the relationship with duration and ratings
 
-    e) implement genres function:to get the corelationo between genres and IMDb ratings.
-
-    f) implement the duration function to get the relationship with duration and ratings
-
-    g) implement the content ranting function to see how broad are the audiences and its relationship with the IMDb ratings.
+    e) implement the content ranting function to see how broad are the audiences and its relationship with the IMDb ratings.
 
 **2. Data Source**
 
@@ -50,6 +46,8 @@ The dataset used in this analysis was sourced from IMDb’s Top 250 Movies list.
     Casts: The names of stars
     Estimated budget: The cost of making the movie
     Gross worlwide: The revenue from releasing movie to movie theaters
+    Rating counts: The number of viewers who leave ratings
+    Content rating: The category of the movie targets for
 
 Each of these attributes was collected for all 250 movies, and the data was stored in a CSV file for further analysis.
 
