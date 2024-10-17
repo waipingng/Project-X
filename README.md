@@ -103,8 +103,13 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
     
 **4.1 Average Rating by Genre**
 
-Are certain genres more likely to have higher ratings?
+The data reveals a clear distinction between the highest and lowest-rated genres based on user ratings. At the top, "Mountain Adventure" leads with an impressive rating of 9, followed closely by "Medical Drama" and "Gun Fu", both rated at 8.7. These top genres demonstrate a strong appeal across a range of themes, from thrilling action in "Gun Fu" to the human-centric drama of "Medical Drama."
 
+The ratings then gradually taper down to "Prison Drama" at 8.54, which rounds off the top-rated list, signaling strong audience appreciation for intense and dramatic storytelling formats.
+
+Conversely, at the lower end of the spectrum, a variety of genres including "Boxing," "Iyashikei," "Cyber Thriller," "Motorsport," and others share a uniform rating of 8.1. This grouping suggests that while these genres still hold some appeal, they may cater to more niche audiences or lack the broader mass appeal found in the higher-rated categories.
+
+In sum, the genres in the upper echelon are marked by diverse but universally engaging themes, whereas the lower-rated ones may be more specialized or niche, attracting a smaller but dedicated audience base.
 
 
 **4.2 Word Frequencies in description and IMDb Ratings**
