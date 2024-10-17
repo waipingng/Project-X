@@ -104,13 +104,13 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
 **4.1 Average Rating by Genre**
 
 The data reveals a clear distinction between the highest and lowest-rated genres based on user ratings. At the top, "Mountain Adventure" leads with an impressive rating of 9, followed closely by "Medical Drama" and "Gun Fu", both rated at 8.7. These top genres demonstrate a strong appeal across a range of themes, from thrilling action in "Gun Fu" to the human-centric drama of "Medical Drama."
-
 The ratings then gradually taper down to "Prison Drama" at 8.54, which rounds off the top-rated list, signaling strong audience appreciation for intense and dramatic storytelling formats.
 
 Conversely, at the lower end of the spectrum, a variety of genres including "Boxing," "Iyashikei," "Cyber Thriller," "Motorsport," and others share a uniform rating of 8.1. This grouping suggests that while these genres still hold some appeal, they may cater to more niche audiences or lack the broader mass appeal found in the higher-rated categories.
 
-In sum, the genres in the upper echelon are marked by diverse but universally engaging themes, whereas the lower-rated ones may be more specialized or niche, attracting a smaller but dedicated audience base.
+When analyzing the ratings, it becomes evident that comparing genres purely based on average scores can be misleading. Niche genres, like "Mountain Adventure" or "Gun Fu", benefit from having fewer films, which means even one highly rated movie can significantly raise the average. In contrast, more popular genres like crime or drama have a much larger selection of films, so their averages are more diluted. Even though many films in these popular genres may perform well, the sheer number of titles—both high- and low-performing—brings down the overall average rating.
 
+In terms of frequency, drama clearly dominates with 186 films, far exceeding other genres like adventure (61), thriller (55), action (54), and crime (53). This also reinforces why the average ratings in popular genres tend to be lower: with such a vast number of entries, it’s inevitable that not all films will perform as well. In contrast, niche genres like "Mountain Adventure" or "Prison Drama" may have fewer films but benefit from higher average ratings due to the small sample size.
 
 **4.2 Word Frequencies in description and IMDb Ratings**
 
@@ -192,7 +192,7 @@ PG and PG-13 movies, on the other hand, tend to perform well because they appeal
 
 **Conclusion**
 
-The findings from this analysis provide valuable insights into the factors that contribute to a movie’s success on IMDb. Genres play a crucial role, with drama, documentaries, and animated films performing best, while action and comedy tend to receive lower ratings. Word frequencies in movie descriptions indicate that films emphasizing youth, family dynamics, and cultural identity resonate more with audiences than those focused on war or struggles. Longer movies are favored, likely due to their ability to offer more complex storytelling and character development. Finally, content ratings demonstrate that films with broader audience reach, such as PG and PG-13, tend to perform better than those restricted to adult viewers.
+The findings from this analysis provide valuable insights into the factors that contribute to a movie’s success on IMDb. Genres play a crucial role, with drama, adventure, thriller, action, and crime performing best. Word frequencies in movie descriptions indicate that films emphasizing youth, family dynamics, and cultural identity resonate more with audiences than those focused on war or struggles. Longer movies are favored, likely due to their ability to offer more complex storytelling and character development. Finally, content ratings demonstrate that films with broader audience reach, such as PG and PG-13, perform better than those restricted to adult viewers.
 
 The goal of this research was to uncover what makes a movie successful in terms of IMDb ratings and longevity. Based on our analysis, we can conclude that successful movies often focus on emotionally engaging and relatable themes, appeal to a broad audience, offer in-depth narratives, and are associated with longer runtimes. These findings offer valuable guidance for filmmakers and studios aiming to create films that not only perform well in the short term but also maintain lasting appeal over time.
 
