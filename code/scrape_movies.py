@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 10 20:32:30 2024
 
-@author: wangyuchen
-"""
 
 from common import get_soup
 
@@ -125,7 +119,7 @@ def scrape_movie(url, headers):
     scrape_top250_dict = {
         "title": title,
         "year": year,
-        "movie length": movie_length,
+        "duration": movie_length,
         "rating": rating,
         "genre": genre,
         "description": description,

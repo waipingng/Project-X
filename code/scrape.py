@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Oct 14 13:04:48 2024
 
-@author: wangyuchen
-"""
 
 import os
 import json
@@ -14,7 +8,7 @@ from common import scrape_page
 from scrape_movies import scrape_movies
 
 BASE_DIR = "artifacts"
-CSV_PATH = os.path.join(BASE_DIR, "results.csv")
+CSV_PATH = os.path.join(BASE_DIR, "movies.csv")
 
 URL = "https://www.imdb.com/chart/top"
 headers = {
@@ -41,7 +35,7 @@ def write_books_to_csv(data, path):
 if __name__ == "__main__":
 
     BASE_DIR = "artifacts"
-    CSV_PATH = os.path.join(BASE_DIR, "results.csv")
+    CSV_PATH = os.path.join(BASE_DIR, "movies.csv")
 
     os.makedirs(BASE_DIR, exist_ok=True)
 
