@@ -6,7 +6,9 @@ def read_csv_to_dataframe(csv_file):
 
 # Step 2: Classify ratings into categories
 def classify_rating(rating):
-    if 8.2 <= rating <= 8.4:
+    if 8.0 <= rating <= 8.2:
+        return '8.0-8.2'
+    if 8.3 <=rating <= 8.4:
         return '8.2-8.4'
     elif rating == 8.5:
         return '8.5'
@@ -27,7 +29,7 @@ def count_ratings(df):
     count_df.reset_index(inplace=True)
     return count_df
 
-# Step 4: Save the result to a new CSV file
+# Step 4: Save the result to a  CSV file
 def save_to_csv(df, output_file):
     """Saves the DataFrame to a CSV file."""
     df.to_csv(output_file, index=False)
