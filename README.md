@@ -173,10 +173,16 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 **4.4 Content Rating and Audience Reach**
 ![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/genre_audience_breadth_table_vertical.png)
-    Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
-    Restricted Audiences (R-rated): R-rated movies have a narrower audience due to content restrictions. While some, like Pulp Fiction, perform well, many others struggle to reach the same broad appeal as PG-13 films.
+    for the content rating, the films with the rating of "approved" or the "G" indicated that's content is suitable for all ages, may have the broader audience reach. our table shows that the following film genres may have the higher proportion of the rating of "approved" or the "G",
+    they are film-noir(100% are approved),Musical(100% are level G),Animation(36% of level G), Familiy(38% of level G), so make films in such genres may have the broader audience. 
+    However, the level R and NC-17 means that these films are restricted to adult audience which may have the very narrow audience, our table shows that the following film genres may have the higher proportion of the rating of "level R" they are Biography, Crime, History, Horror,Sci-Fic,Thriller, Western. 
+    so make films in such genres may have the narrower audience. 
+    
 
-**4.5 Content Rating and Audience Reach**
+**4.5 film Rating and content rating**
+![image](https://raw.githubusercontent.com/waipingng/Project-X/5647b2b9874d736ad2367c6a67165327d62249ac/artifacts/rate_audience_breadth.png)
+    whether make the film in the narrower film genre is totally the terrible thing ? seems that's not, since from our graph we can see that films with the high rates(8.8-9.3) are limited to R,PG-13and approved films.
+    So if the film you make has the content rating of R , you may have the narrow audience reach but higher film rate.
 
 **5. Limitations**
 
