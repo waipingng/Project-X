@@ -1,5 +1,4 @@
 
-
 from common import get_soup
 
 def get_title(soup):
@@ -103,6 +102,8 @@ def get_movie_gross_worldwide(soup):
 def get_rating_count(soup):
     movie_rating_raw = soup.find_all("div", attrs={"data-testid": "hero-rating-bar__aggregate-rating"})[0]
     rating_count = movie_rating_raw.find_all("div", class_ = "sc-d541859f-3 dwhNqC")[0].text
+<<<<<<< HEAD
+=======
 
     return rating_count
     
@@ -114,7 +115,19 @@ def get_content_rating(soup):
         content_rating = "N/A"
 
     return content_rating
+>>>>>>> bdee9a9b2b575e9bae3e4e9b1e49588b167166ae
 
+    return rating_count
+    
+def get_content_rating(soup):
+    content_rating_raw = soup.find_all("ul", class_ = "ipc-inline-list ipc-inline-list--show-dividers sc-ec65ba05-2 joVhBE baseAlt")[0]
+    if len(content_rating_raw.find_all("li", class_ = "ipc-inline-list__item")) == 3 :
+        content_rating = content_rating_raw.find_all("a", class_ = "ipc-link ipc-link--baseAlt ipc-link--inherit-color")[1].text
+    else:
+        content_rating = "N/A"
+
+    return content_rating
+    
 def scrape_movie(url, headers):
 
     soup = get_soup(url, headers = headers)
@@ -144,8 +157,13 @@ def scrape_movie(url, headers):
         "number of user reviews ": num_user_reviews,
         "movie budget": movie_budget,
         "movie gross worldwide": movie_gross_worldwide,
+<<<<<<< HEAD
+        "rating_count": get_rating_count(soup),
+        "content_rating": get_content_rating(soup)
+=======
         "rating_count": rating_count,
         "content_rating": content_rating
+>>>>>>> bdee9a9b2b575e9bae3e4e9b1e49588b167166ae
     }
 
     return scrape_top250_dict
