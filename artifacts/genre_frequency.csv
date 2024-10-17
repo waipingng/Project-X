@@ -1,210 +1,137 @@
 genre,frequency
-'drama',121
-'adventure',56
-'thriller'],53
-'drama'],53
-'action',52
-'comedy',45
-'crime',44
-'tragedy',34
-'war'],33
-'biography',27
-'mystery',27
-'period drama',22
-'animation',22
-'psychological drama',21
-'sci-fi'],19
-'romance'],18
-'family',18
-'epic',17
-['psychological drama',16
-'quest',15
-'fantasy'],15
-['docudrama',15
-['action epic',15
-'psychological thriller',14
-'fantasy',14
-['epic',13
-['dark comedy',12
-'supernatural fantasy',12
-['adventure epic',12
-'war epic',11
-'suspense mystery',11
-'gangster',10
-'romance',10
-'mystery'],10
-'space sci-fi',10
-'sci-fi epic',10
-'superhero',10
-['drama',9
-['coming-of-age',9
-'fantasy epic',8
-['period drama',8
-'sword & sorcery',8
-'sport'],8
-'family'],8
-'romantic comedy',8
-'sci-fi',7
-'dystopian sci-fi',7
-'true crime',7
-'hand-drawn animation',7
-'computer animation',7
-'western'],7
-'slapstick',7
-'urban adventure',7
-'adventure epic',6
-['computer animation',6
-'desert adventure',5
-'satire',5
-'serial killer',5
-'hard-boiled detective',5
-['crime',5
-'prison drama',5
-['legal drama',5
-'cyberpunk',5
-['gangster',5
-'artificial intelligence',5
-['psychological thriller',5
-'history',5
-['feel-good romance',4
-'adventure'],4
-'teen adventure',4
-'time travel',4
-'police procedural',4
-['cop drama',4
-'history'],4
-'dark fantasy',4
-['buddy comedy',4
-['tragedy',4
-'road trip',4
-['dark romance',4
-'feel-good romance',4
-['one-person army action',4
-['caper',4
-['boxing',4
-'crime'],4
-'whodunnit',4
-['animal adventure',4
-'dark comedy',3
-['dystopian sci-fi',3
-'survival',3
-['film noir',3
-'political drama',3
-'music'],3
-'heist',3
-'music',3
-'holiday',3
-['anime',3
-'fairy tale',3
-'western epic',3
-'legal drama',3
-'samurai',3
-'holiday romance',3
-'coming-of-age',3
-'spaghetti western',3
-'teen fantasy',3
-['farce',3
-'musical'],3
-'anime',3
-'sword & sandal',3
-'horror',3
-'globetrotting adventure',3
-['drama'],3
-['alien invasion',3
-['classic musical',3
-'erotic thriller',2
-'motorsport',2
-['road trip',2
-'high-concept comedy',2
-'docudrama',2
-['sea adventure',2
-'tragic romance',2
-['high-concept comedy',2
-['police procedural',2
-'workplace drama',2
-'historical epic',2
-['desert adventure',2
-'holiday family',2
-'quirky comedy',2
-'thriller',2
-'musical',2
-'legal thriller',2
-['war epic',2
-'screwball comedy',2
-['costume drama',2
-'steampunk',2
-'one-person army action',2
-'monster horror',2
-['suspense mystery',2
-'jungle adventure',2
-['adult animation',2
-['prison drama',2
-'supernatural horror',2
-['parody',2
-'horror'],2
-['space sci-fi',2
-'showbiz drama',2
-['artificial intelligence',2
-['conspiracy thriller',2
-'farce',2
-['action',2
-'holiday comedy',2
-'mountain adventure',1
-'drug crime',1
-'martial arts',1
-'teen comedy',1
-['medical drama',1
-'gun fu',1
-'psychological horror',1
-['psychological horror',1
-'slasher horror',1
-['slapstick',1
-['cyberpunk',1
-['spy',1
-['drug crime',1
-['holiday comedy',1
-'jukebox musical',1
-'shōjo',1
-'adult animation',1
-['comedy',1
-['political thriller',1
-'spy',1
-'financial drama'],1
-['biography',1
-'cop drama',1
-['showbiz drama',1
-['dinosaur adventure',1
-['samurai',1
-['contemporary western',1
-['jungle adventure',1
-'political thriller',1
-'sketch comedy',1
-'romantic epic',1
-'body horror',1
-['martial arts',1
-'buddy comedy',1
-'sea adventure',1
-'iyashikei',1
-['dark fantasy',1
-['adventure',1
-'car action',1
-'holiday'],1
-['superhero',1
-'holiday animation',1
-['hand-drawn animation',1
-['bumbling detective',1
-'teen drama',1
-['erotic thriller',1
-'cyber thriller',1
-['satire',1
-'stoner comedy',1
-'stop motion animation',1
-['political drama',1
-['supernatural horror',1
-'swashbuckler',1
-'steamy romance',1
-['workplace drama',1
-['screwball comedy',1
-'kaiju',1
-'comedy'],1
-['true crime',1
+drama,186
+adventure,61
+thriller,55
+action,54
+crime,53
+comedy,47
+tragedy,38
+mystery,37
+psychological drama,37
+war,33
+epic,30
+period drama,30
+fantasy,29
+romance,28
+biography,28
+family,26
+sci-fi,26
+animation,22
+psychological thriller,19
+adventure epic,18
+docudrama,17
+dark comedy,15
+gangster,15
+action epic,15
+quest,15
+computer animation,13
+war epic,13
+suspense mystery,13
+space sci-fi,12
+supernatural fantasy,12
+coming-of-age,12
+superhero,11
+sci-fi epic,10
+dystopian sci-fi,10
+history,9
+romantic comedy,8
+true crime,8
+hand-drawn animation,8
+fantasy epic,8
+legal drama,8
+sword & sorcery,8
+slapstick,8
+feel-good romance,8
+sport,8
+prison drama,7
+desert adventure,7
+artificial intelligence,7
+western,7
+urban adventure,7
+satire,6
+one-person army action,6
+cyberpunk,6
+music,6
+anime,6
+police procedural,6
+road trip,6
+hard-boiled detective,5
+serial killer,5
+cop drama,5
+farce,5
+musical,5
+buddy comedy,5
+horror,5
+dark fantasy,5
+whodunnit,4
+animal adventure,4
+political drama,4
+time travel,4
+holiday,4
+samurai,4
+high-concept comedy,4
+teen adventure,4
+dark romance,4
+caper,4
+boxing,4
+film noir,3
+classic musical,3
+showbiz drama,3
+supernatural horror,3
+sea adventure,3
+holiday comedy,3
+screwball comedy,3
+heist,3
+spaghetti western,3
+holiday romance,3
+workplace drama,3
+western epic,3
+fairy tale,3
+erotic thriller,3
+survival,3
+teen fantasy,3
+globetrotting adventure,3
+alien invasion,3
+adult animation,3
+jungle adventure,3
+sword & sandal,3
+drug crime,2
+historical epic,2
+psychological horror,2
+steampunk,2
+spy,2
+martial arts,2
+holiday family,2
+tragic romance,2
+motorsport,2
+quirky comedy,2
+costume drama,2
+parody,2
+conspiracy thriller,2
+political thriller,2
+legal thriller,2
+monster horror,2
+slasher horror,1
+teen comedy,1
+medical drama,1
+gun fu,1
+mountain adventure,1
+shōjo,1
+jukebox musical,1
+financial drama,1
+sketch comedy,1
+body horror,1
+contemporary western,1
+dinosaur adventure,1
+iyashikei,1
+car action,1
+romantic epic,1
+holiday animation,1
+teen drama,1
+cyber thriller,1
+bumbling detective,1
+stop motion animation,1
+stoner comedy,1
+swashbuckler,1
+steamy romance,1
+kaiju,1
