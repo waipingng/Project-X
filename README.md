@@ -11,7 +11,7 @@ This research aims to investigate four critical factors:
     The correlation between word frequencies in movie descriptions and IMDb ratings.
     The relationship between genres and IMDb ratings.
     The effect of movie duration on ratings.
-    How content ratings (e.g., PG, PG-13, R) affect the breadth of a movie’s audience and its correlation with ratings.
+    How film genres affect the breadth of a movie’s audience and the correlation between the audience's breadth and the ratings.
 
 By examining these factors, we aim to uncover patterns that can inform filmmakers, studios, and marketers on how to craft movies that resonate with audiences and maintain relevance over time.
 
