@@ -16,4 +16,5 @@ plt.ylabel('Frequency', fontsize=12)
 
 # Step 4: Show the plot
 plt.tight_layout()
+plt.savefig('artifacts/movie_length_frequency.png', format='png')
 plt.show()
