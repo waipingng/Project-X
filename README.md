@@ -30,7 +30,7 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
 
     f) implement the duration function to get the relationship with duration and ratings
 
-    g) genre_audience_breadth_code.py by python3 code/genre_audience_breadth_code.py: figure out the coding part of  the relationship of film genres and the breadth of a movie’s audience and save to the new csv file
+    g) implement genre_audience_breadth_code.py by python3 code/genre_audience_breadth_code.py: figure out the coding part of  the relationship of film genres and the breadth of a movie’s audience and save to the new csv file
 
     h)implement graph_genre_breadth.py by python3 code/graph_genre_breadth.py : draw the graph of the relationship between film genres and the breadth of a movie’s audience 
 

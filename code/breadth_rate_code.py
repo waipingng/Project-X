@@ -1,5 +1,5 @@
 import pandas as pd
-csv_file = 'artifacts/moviesnew.csv'
+csv_file = 'artifacts/movies.csv'
 # Step 1: Read the CSV file into a DataFrame
 def read_csv_to_dataframe(csv_file):
     return pd.read_csv(csv_file)
@@ -36,7 +36,7 @@ def save_to_csv(df, output_file):
 
 # Main execution
 if __name__ == "__main__":
-    input_file = 'artifacts/moviesnew.csv'  
+    input_file = 'artifacts/movies.csv'
     output_file = 'artifacts/breadth_rate.csv'
 
     df = read_csv_to_dataframe(input_file)
