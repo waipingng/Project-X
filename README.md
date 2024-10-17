@@ -109,7 +109,7 @@ The goal of this analysis is to investigate how different aspects of movies—su
 
 Based on the analysis of the genre distribution among the top 250 rated movies, it is clear that drama emerges as the most dominant genre, boasting a substantial frequency of 182 films. This suggests a strong audience preference for emotionally engaging narratives. Following drama, adventure and action genres also show significant representation, with 61 and 54 films, respectively, indicating a market for thrilling and action-packed content. Other genres like crime and comedy follow closely, appealing to viewers' interests in suspenseful and humorous storytelling. Genres such as horror and musical show much lower frequencies, suggesting these may have a more niche audience. For anyone considering producing a film, focusing on drama or incorporating adventure and action elements could be a promising strategy to attract a wider audience.
 
-4.2 Analysis of the Correlation Between Word Frequencies and IMDb Ratings
+4.2 Word Frequencies in description and IMDb Ratings
 
 ![image](https://github.com/user-attachments/assets/e5ff057a-0abc-4476-bb8c-e31ac20d5597)
 
@@ -153,6 +153,8 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
         For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
 4.3 Duration insights:
+![image](https://github.com/user-attachments/assets/8be2b623-c2b8-401b-bf1a-feffcd7a8fae)
+
 
     The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less 
     common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are 
@@ -175,3 +177,12 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
     Sentiment Analysis of User Reviews: Analyzing review text could provide deeper insights into why audiences rate certain movies highly or poorly.
     Incorporating Financial Data: Adding data such as budget and box office performance could reveal whether financial success correlates with audience satisfaction.
     Director and Actor Analysis: Understanding the influence of key filmmakers and stars on movie ratings could shed light on star power’s impact on success.
+
+Conclusion
+
+The findings from this analysis provide valuable insights into the factors that contribute to a movie’s success on IMDb. Genres play a crucial role, with drama, documentaries, and animated films performing best, while action and comedy tend to receive lower ratings. Word frequencies in movie descriptions indicate that films emphasizing youth, family dynamics, and cultural identity resonate more with audiences than those focused on war or struggles. Longer movies are favored, likely due to their ability to offer more complex storytelling and character development. Finally, content ratings demonstrate that films with broader audience reach, such as PG and PG-13, tend to perform better than those restricted to adult viewers.
+
+The goal of this research was to uncover what makes a movie successful in terms of IMDb ratings and longevity. Based on our analysis, we can conclude that successful movies often focus on emotionally engaging and relatable themes, appeal to a broad audience, offer in-depth narratives, and are associated with longer runtimes. These findings offer valuable guidance for filmmakers and studios aiming to create films that not only perform well in the short term but also maintain lasting appeal over time.
+
+Further research could incorporate sentiment analysis of user reviews, financial data, and comparisons across multiple rating platforms to deepen our understanding of what contributes to a movie’s success. By integrating these additional elements, future studies can provide a more comprehensive picture of the factors influencing movie ratings and longevity.
+
