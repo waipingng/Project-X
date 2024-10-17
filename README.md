@@ -103,6 +103,8 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
     
 **4.1 Average Rating by Genre**
 
+Are certain genres more likely to have higher ratings?
+
     Genres with the Highest Average Ratings:
         Documentary: 9.0 (appeared less frequently but had high average ratings).
         Drama: 8.7 (the most common genre in the Top 250).
@@ -114,6 +116,8 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
 Based on the analysis of the genre distribution among the top 250 rated movies, it is clear that drama emerges as the most dominant genre, boasting a substantial frequency of 182 films. This suggests a strong audience preference for emotionally engaging narratives. Following drama, adventure and action genres also show significant representation, with 61 and 54 films, respectively, indicating a market for thrilling and action-packed content. Other genres like crime and comedy follow closely, appealing to viewers' interests in suspenseful and humorous storytelling. Genres such as horror and musical show much lower frequencies, suggesting these may have a more niche audience. For anyone considering producing a film, focusing on drama or incorporating adventure and action elements could be a promising strategy to attract a wider audience.
 
 **4.2 Word Frequencies in description and IMDb Ratings**
+
+ Do certain words in movie descriptions correlate with higher ratings?
 
 ![image](https://github.com/user-attachments/assets/e5ff057a-0abc-4476-bb8c-e31ac20d5597)
 
@@ -144,12 +148,16 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 **4.3 Duration insights:**
 
+Does movie length affect its IMDb rating?
+
 ![image](https://github.com/user-attachments/assets/8be2b623-c2b8-401b-bf1a-feffcd7a8fae)
 
 
 The "Frequency of Movie Length Categories" graph shows that long movies dominate the dataset, with around 200 films. In contrast, medium and short movies are much less  common,with frequencies below 50 and 20, respectively. This suggests a bias toward longer films, potentially reflecting industry trends where longer runtimes are associated with higher production values or audience preferences. The low representation of short and medium films might indicate their lesser production or inclusion in mainstream datasets. Further analysis could explore whether longer runtimes correlate with better movie performance.
 
 **4.4 Content Rating and Audience Reach**
+
+Does the content rating affect the film’s rating based on audience size?
 
 Wider Audience Appeal (PG, PG-13): Movies with PG or PG-13 ratings tend to perform better, likely because they reach broader audiences, including families and younger viewers. Films like Star Wars and Harry Potter are examples of high-performing movies with broad appeal.
 
