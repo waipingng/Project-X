@@ -161,7 +161,7 @@ Overall, the analysis indicates a clear trend where longer movies tend to be rat
 Does Content Rating Affect a Film’s Rating Based on Audience Size?
 
 ![image](https://raw.githubusercontent.com/waipingng/Project-X/refs/heads/main/artifacts/genre_audience_breadth_table_part1.png)
-![image](https://raw.githubusercontent.com/waipingng/Project-X/refs/heads/main/artifacts/genre_audience_breadth_table_part2.png)
+
 My values in the graph are rounded to the nearest whole percentage
 The content rating of a movie plays a crucial role in determining its potential audience reach. Content ratings like "Approved" or "G" indicate that a film is suitable for all ages, making it accessible to a broader audience, including families and young viewers. Analysis of our dataset reveals that certain genres have a higher proportion of movies with these inclusive ratings. For example, Parody (50% "G"), Anime (50% "G"), and slapstick (100% "G") are more likely to have content suitable for general audiences. Producing films in these genres can attract a diverse audience base, from children to adults, offering the potential for widespread popularity.
 
