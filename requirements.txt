@@ -4,3 +4,5 @@ pandas
 collections
 matplotlib.pyplot
 scipy.stats
+seaborn
+

@@ -105,14 +105,6 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
 
 Are certain genres more likely to have higher ratings?
 
-    Genres with the Highest Average Ratings:
-        Documentary: 9.0 (appeared less frequently but had high average ratings).
-        Drama: 8.7 (the most common genre in the Top 250).
-        Animation: 8.5 (highly rated animated movies like Toy Story and Spirited Away).
-    Genres with Lower Average Ratings:
-        Comedy: 8.0 (comedies tended to have lower ratings compared to dramas).
-        Action: 7.9 (highly popular, but fewer movies reached the 9.0+ threshold).
-
 Based on the analysis of the genre distribution among the top 250 rated movies, it is clear that drama emerges as the most dominant genre, boasting a substantial frequency of 182 films. This suggests a strong audience preference for emotionally engaging narratives. Following drama, adventure and action genres also show significant representation, with 61 and 54 films, respectively, indicating a market for thrilling and action-packed content. Other genres like crime and comedy follow closely, appealing to viewers' interests in suspenseful and humorous storytelling. Genres such as horror and musical show much lower frequencies, suggesting these may have a more niche audience. For anyone considering producing a film, focusing on drama or incorporating adventure and action elements could be a promising strategy to attract a wider audience.
 
 **4.2 Word Frequencies in description and IMDb Ratings**
