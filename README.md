@@ -95,11 +95,45 @@ The data cleaning process included:
 
 Based on the analysis of the genre distribution among the top 250 rated movies, it is clear that drama emerges as the most dominant genre, boasting a substantial frequency of 182 films. This suggests a strong audience preference for emotionally engaging narratives. Following drama, adventure and action genres also show significant representation, with 61 and 54 films, respectively, indicating a market for thrilling and action-packed content. Other genres like crime and comedy follow closely, appealing to viewers' interests in suspenseful and humorous storytelling. Genres such as horror and musical show much lower frequencies, suggesting these may have a more niche audience. For anyone considering producing a film, focusing on drama or incorporating adventure and action elements could be a promising strategy to attract a wider audience.
 
-4.2 IMDb Ratings Over Time
+4.2 Analysis of the Correlation Between Word Frequencies and IMDb Ratings
 
-    Ratings Trends:
-        Movies released in the 1990s and 2000s tend to have higher average ratings compared to those from earlier decades. This could be due to a larger number of IMDb users rating more recent movies.
-        There was a slight decline in average ratings for movies released after 2010, which could indicate the growing volume of new releases and perhaps tougher competition in the streaming era.
+1. Words with Strong Positive Correlation:
+
+    "Young" (~0.15 correlation):
+        This word shows the strongest positive correlation with ratings. It suggests that movies where "young" appears frequently in the description (perhaps focusing on younger characters or youth-related themes) tend to receive higher IMDb ratings.
+        Examples could be films like The Lion King or Harry Potter, where youth and coming-of-age narratives play a central role.
+
+    "American" (~0.11 correlation):
+        The word "American" also shows a high positive correlation. This may suggest that movies centering around American culture, identity, or historical events tend to be highly rated.
+        Examples might include films about American history (Saving Private Ryan), the American Dream, or stories set in the US.
+
+    "Son" (~0.08 correlation):
+        Descriptions that include "son" tend to be correlated with higher ratings. This could reflect the success of family-focused movies or stories involving father-son relationships. Emotional family dynamics often resonate well with audiences.
+
+    "Police" (~0.05 correlation):
+        Movies with a focus on law enforcement or crime-solving seem to perform well. Crime dramas or thrillers where "police" play a central role might often receive favorable reviews, possibly because of their suspenseful nature.
+
+2. Words with Negative Correlation:
+
+    "Struggles" (~ -0.07 correlation):
+        The word "struggles" shows a negative correlation with ratings, which suggests that movies that focus on difficult situations or challenges might not be as highly rated. While conflict is essential for storytelling, perhaps movies emphasizing hardship too heavily don't resonate as positively.
+
+    "War" (~ -0.04 correlation):
+        Surprisingly, "war" shows a slight negative correlation. This could be attributed to mixed audience reception of war films. While some war movies are critically acclaimed (Saving Private Ryan), others may not resonate as well with broader audiences, depending on the narrative's focus.
+
+    "Jewish" (~ -0.05 correlation):
+        The word "Jewish" shows a negative correlation. This might be related to the fact that movies centering around specific cultural or religious groups may have niche appeal and may not resonate as strongly with a wider audience. This is not indicative of quality but might reflect broader audience preferences.
+
+    "Relationship" (~ -0.05 correlation):
+        Surprisingly, "relationship" correlates negatively with ratings. This suggests that movies heavily marketed as focusing on relationships (especially romantic ones) may not always result in high IMDb scores, potentially reflecting oversaturation in certain genres (romantic comedies, dramas, etc.).
+
+3. Neutral or Near-Zero Correlation:
+
+    "Murder", "Love", "Life", "Friend", "Journey" (~0.0 correlation):
+
+        These words have correlations close to zero, meaning their presence in movie descriptions does not strongly impact ratings one way or the other. This might be because these are common themes across many genres, and their mere presence does not necessarily predict the quality of the film.
+
+        For instance, words like "love" or "life" are fundamental to storytelling, and their effect may vary depending on the execution, making them less predictive of high or low ratings.
 
 4.3 Director Insights
 
