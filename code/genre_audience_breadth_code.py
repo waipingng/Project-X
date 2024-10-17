@@ -13,7 +13,7 @@ def read_csv_to_dataframe(csv_file):
 def create_new_genres_list(df):
     new_genres = []  
     for index, row in df.iterrows():
-        genres = re.split(r'[,\s]+', row['genre'])  
+        genres = re.split(r'[,]+', row['genre'])  
         for genre in genres: 
             if isinstance(genre, str) and genre.strip() and genre.isalnum():
                 new_genres.append({'new_genre': genre.strip(), 'content_rating': row['content_rating']})
