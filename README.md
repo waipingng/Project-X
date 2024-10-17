@@ -97,6 +97,9 @@ Based on the analysis of the genre distribution among the top 250 rated movies, 
 
 4.2 Analysis of the Correlation Between Word Frequencies and IMDb Ratings
 
+![image](https://github.com/user-attachments/assets/e5ff057a-0abc-4476-bb8c-e31ac20d5597)
+
+
 1. Words with Strong Positive Correlation:
 
     "Young" (~0.15 correlation):
