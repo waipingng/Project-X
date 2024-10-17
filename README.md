@@ -104,9 +104,7 @@ Content Rating Analysis: We analyzed how different content ratings (e.g., PG, PG
 **4.1 Average Rating by Genre**
 
 
-
-![top_13_genre_plot Small](https://github.com/user-attachments/assets/10e59849-b4ee-457d-83b7-82fc81a7158b)
-
+![top_13_genre_plot](https://github.com/user-attachments/assets/a0ee26b7-cce7-4fff-a587-9d2c4846a735)
 
 
 
