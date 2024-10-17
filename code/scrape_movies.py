@@ -35,9 +35,10 @@ def get_rating(soup):
 def get_genre(soup):
     div_tag = soup.find_all("div", class_ = "ipc-chip-list__scroller")[0]
     genre_tags = div_tag.find_all("span", class_ = "ipc-chip__text")
-    genre = []
+    genre = str()
     for i in range(len(genre_tags)):
-        genre.append(genre_tags[i].text)
+        genre += (genre_tags[i].text + ", ")
+        
     
     return genre
 
@@ -54,9 +55,9 @@ def get_director(soup):
 
 def get_top_casts(soup):
     movie_casts = soup.find_all("a", class_ = "sc-cd7dc4b7-1 kVdWAO")
-    cast_members = []
+    cast_members = str()
     for i in range(len(movie_casts)):
-        cast_members.append(movie_casts[i].text)
+        cast_members += (movie_casts[i].text + ", ")
 
     return cast_members
 
@@ -102,9 +103,6 @@ def get_movie_gross_worldwide(soup):
 def get_rating_count(soup):
     movie_rating_raw = soup.find_all("div", attrs={"data-testid": "hero-rating-bar__aggregate-rating"})[0]
     rating_count = movie_rating_raw.find_all("div", class_ = "sc-d541859f-3 dwhNqC")[0].text
-<<<<<<< HEAD
-=======
-
     return rating_count
     
 def get_content_rating(soup):
@@ -115,7 +113,6 @@ def get_content_rating(soup):
         content_rating = "N/A"
 
     return content_rating
->>>>>>> bdee9a9b2b575e9bae3e4e9b1e49588b167166ae
 
     return rating_count
     
@@ -157,13 +154,10 @@ def scrape_movie(url, headers):
         "number of user reviews ": num_user_reviews,
         "movie budget": movie_budget,
         "movie gross worldwide": movie_gross_worldwide,
-<<<<<<< HEAD
         "rating_count": get_rating_count(soup),
-        "content_rating": get_content_rating(soup)
-=======
+        "content_rating": get_content_rating(soup),
         "rating_count": rating_count,
         "content_rating": content_rating
->>>>>>> bdee9a9b2b575e9bae3e4e9b1e49588b167166ae
     }
 
     return scrape_top250_dict
