@@ -10,8 +10,8 @@ df = pd.read_csv('artifacts/genre_audience_breadth.csv')
 df.set_index(df.columns[0], inplace=True)
 df_transposed = df.T
 
-# Step 3: Format the data as percentages, round to the nearest integer but remove the '%' symbol
-df_transposed = df_transposed.applymap(lambda x: f'{int(round(float(x) * 100))}' if isinstance(x, (int, float)) else x)
+# Step 3: Format the data as percentages, round to the nearest integer 
+df_transposed = df_transposed.astype(float).map(lambda x: x * 100).round(0).astype(int).astype(str) + '%'
 
 # Step 4: Split the table into two parts (half columns each)
 mid_index = math.ceil(len(df_transposed.columns) / 2)
@@ -57,13 +57,8 @@ for (i, j), cell in table2.get_celld().items():
         cell.set_height(0.15)  
 
 # Step 10: Add footnote indicating values are percentages
-plt.figtext(0.5, 0.01, 'Note: Values are percentages (%),My values in the graph are rounded to the nearest whole percentage', ha='center', fontsize=12)
+plt.figtext(0.5, 0.01, 'My values in the graph are rounded to the nearest whole percentage', ha='center', fontsize=12)
 
 # Step 11: Save the second part
 plt.title('Relationship between Genre and Audience Breadth by Content Rating (Part 2)', fontsize=14, pad=20)
 plt.savefig('artifacts/genre_audience_breadth_table_part2.png', bbox_inches='tight')
-
-
-
-
-
