@@ -124,7 +124,6 @@ In terms of frequency, drama clearly dominates with 186 films, far exceeding oth
 The chart reveals several insights into the relationship between certain thematic words and movie ratings:
 
 Words with Positive Correlation:
-
 "Son" shows the strongest positive correlation, indicating that movies mentioning "son" in their descriptions tend to receive higher ratings. This could reflect a preference for narratives that explore family dynamics, father-son relationships, or stories centered around younger characters.
 "Young" also has a positive correlation, suggesting that themes involving youth, coming-of-age stories, or youthful energy are well-received by audiences. Films featuring younger characters often resonate with viewers, possibly due to their relatability and emotional depth.
 "American" is positively correlated with ratings, highlighting that movies that focus on American culture, identity, or historical events may be particularly appealing to audiences. This theme could reflect a sense of familiarity or national pride among viewers.
