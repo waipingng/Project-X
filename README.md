@@ -26,9 +26,7 @@ By examining these factors, we aim to uncover patterns that can inform filmmaker
     d) implement the duration function by python3 code/rating_and_length.py: to get the relationship with duration and ratings, python3 code/Duration_frequency_graph.py to get the graph
 
     e) implement genre_audience_breadth_code.py by python3 code/genre_audience_breadth_code.py: figure out the coding part of  the relationship of film genres and the breadth of a movie’s audience and save to the new csv file; implement graph_genre_breadth.py by python3 code/graph_genre_breadth.py : draw the graph of the relationship between film genres and the breadth of a movie’s audience; implement breadth_rate_code.py by python3 code/breadth_rate_code.py : the coding part of the correlation between the audience's breadth and the ratings and save to the new csv file; implement graph_breadth_rate.py by python3 code/graph_breadth_rate.py : draw the graph of the correlation between the audience's breadth and the ratings 
-
-
-   
+ 
 **2. Data Source**
 
 **2.1 Dataset Source**
@@ -125,19 +123,20 @@ In terms of frequency, drama clearly dominates with 186 films, far exceeding oth
 
 The chart reveals several insights into the relationship between certain thematic words and movie ratings:
 
-    Words with Positive Correlation:
-        "Son" shows the strongest positive correlation, indicating that movies mentioning "son" in their descriptions tend to receive higher ratings. This could reflect a preference for narratives that explore family dynamics, father-son relationships, or stories centered around younger characters.
-        "Young" also has a positive correlation, suggesting that themes involving youth, coming-of-age stories, or youthful energy are well-received by audiences. Films featuring younger characters often resonate with viewers, possibly due to their relatability and emotional depth.
-        "American" is positively correlated with ratings, highlighting that movies that focus on American culture, identity, or historical events may be particularly appealing to audiences. This theme could reflect a sense of familiarity or national pride among viewers.
-        "Woman" and "Story" show moderate positive correlations, indicating that films emphasizing female characters or storytelling elements tend to be appreciated by audiences. The focus on diverse narratives and strong character development may contribute to higher ratings.
+Words with Positive Correlation:
 
-    Words with Negative Correlation:
-        "Read" and "Struggles" exhibit a negative correlation with ratings, suggesting that movies that emphasize challenges or struggles in their descriptions may not resonate as positively with viewers. While conflict is essential for storytelling, an excessive focus on hardship could make a film seem heavier or less enjoyable, potentially impacting ratings.
-        "Jewish" and "Journey" also show slight negative correlations, which may indicate that movies centered around specific cultural or religious experiences or those framed as journeys might have a more niche appeal. While these films can be critically acclaimed, their themes may not always attract broad audiences, resulting in varied ratings.
-        "Mysterious" shows a slight negative correlation, suggesting that films focusing on mystery or suspense might not consistently achieve high ratings. This could be due to the challenges of delivering satisfying resolutions in suspenseful narratives, which can affect overall viewer satisfaction.
+"Son" shows the strongest positive correlation, indicating that movies mentioning "son" in their descriptions tend to receive higher ratings. This could reflect a preference for narratives that explore family dynamics, father-son relationships, or stories centered around younger characters.
+"Young" also has a positive correlation, suggesting that themes involving youth, coming-of-age stories, or youthful energy are well-received by audiences. Films featuring younger characters often resonate with viewers, possibly due to their relatability and emotional depth.
+"American" is positively correlated with ratings, highlighting that movies that focus on American culture, identity, or historical events may be particularly appealing to audiences. This theme could reflect a sense of familiarity or national pride among viewers.
+"Woman" and "Story" show moderate positive correlations, indicating that films emphasizing female characters or storytelling elements tend to be appreciated by audiences. The focus on diverse narratives and strong character development may contribute to higher ratings.
 
-    Neutral or Near-Zero Correlation:
-        Words like "Love", "Crime", "Life", and "Friends" have correlations close to zero, indicating that their presence in movie descriptions does not have a significant linear relationship with ratings. These are common themes across many film genres, and their impact on ratings may vary widely depending on the execution and context of each film. While such words are integral to storytelling, they do not appear to be strong predictors of a movie's rating by themselves.
+Words with Negative Correlation:
+"Read" and "Struggles" exhibit a negative correlation with ratings, suggesting that movies that emphasize challenges or struggles in their descriptions may not resonate as positively with viewers. While conflict is essential for storytelling, an excessive focus on hardship could make a film seem heavier or less enjoyable, potentially impacting ratings.
+"Jewish" and "Journey" also show slight negative correlations, which may indicate that movies centered around specific cultural or religious experiences or those framed as journeys might have a more niche appeal. While these films can be critically acclaimed, their themes may not always attract broad audiences, resulting in varied ratings.
+ "Mysterious" shows a slight negative correlation, suggesting that films focusing on mystery or suspense might not consistently achieve high ratings. This could be due to the challenges of delivering satisfying resolutions in suspenseful narratives, which can affect overall viewer satisfaction.
+
+Neutral or Near-Zero Correlation:
+Words like "Love", "Crime", "Life", and "Friends" have correlations close to zero, indicating that their presence in movie descriptions does not have a significant linear relationship with ratings. These are common themes across many film genres, and their impact on ratings may vary widely depending on the execution and context of each film. While such words are integral to storytelling, they do not appear to be strong predictors of a movie's rating by themselves.
 
 This analysis demonstrates that certain words in movie descriptions have measurable correlations with IMDb ratings. Themes related to family ("son"), youth ("young"), and cultural identity ("American") tend to be associated with higher ratings, suggesting that audiences appreciate films that explore these themes deeply. Conversely, words like "struggles" and "read" correlate negatively with ratings, indicating that narratives focusing heavily on hardship or introspective themes might be less universally appealing. The presence of neutral correlations for terms like "love" or "crime" suggests that these themes, while popular, do not predict a film’s rating without considering the quality and context of their presentation.
 
