@@ -144,8 +144,8 @@ Overall, this analysis provides valuable insights for filmmakers and content cre
 **4.3 Duration insights:**
 
 Does movie length affect its IMDb rating?
+![rating_distribution_by_length_boxplot](https://github.com/user-attachments/assets/7244d36e-ce8b-4558-9df1-4c20aadd90db)
 
-![image](https://github.com/user-attachments/assets/72e21adf-d4f2-459b-960d-b6682fe9b8ee)
 
 The box plot above illustrates the distribution of IMDb ratings based on three categories of movie lengths: short (less than 90 mins), medium (90-150 mins), and long (above 150 mins). Long movies show a notably higher median rating, around 8.5, compared to their shorter counterparts. This suggests that longer films tend to achieve more favorable ratings, potentially because they have the time to delve into complex narratives, develop characters more fully, and create immersive experiences that resonate with viewers. The ratings of long movies, while varied, maintain a relatively high range, and a few outliers reach ratings above 9.0. These outliers indicate that when executed well, long films can achieve critical acclaim and high audience ratings.
 
