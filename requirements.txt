@@ -7,3 +7,9 @@ scipy.stats
 seaborn
 math
 re
+os
+Counter
+pearsonr
+json
+get_soup
+csv
