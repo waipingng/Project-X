@@ -6,4 +6,4 @@ matplotlib.pyplot
 scipy.stats
 seaborn
 math
-
+re

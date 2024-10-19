@@ -1,7 +1,6 @@
 # use python code and use movies.csv file we have scraped from the website to get the new csv file which can show the relationship between the genre and its breadth of a movie’s audience .
 #now use the content rating to represent the the breadth of a movie’s audience
-import pandas as pd  
-import json  
+import pandas as pd   
 import re
 
 
