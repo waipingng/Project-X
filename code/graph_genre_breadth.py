@@ -62,3 +62,5 @@ plt.figtext(0.5, 0.01, 'My values in the graph are rounded to the nearest whole 
 # Step 11: Save the second part
 plt.title('Relationship between Genre and Audience Breadth by Content Rating (Part 2)', fontsize=14, pad=20)
 plt.savefig('artifacts/genre_audience_breadth_table_part2.png', bbox_inches='tight')
+
+

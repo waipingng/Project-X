@@ -33,43 +33,14 @@ plt.title('Frequency of R and G Content Ratings by Rating Category')
 plt.xlabel('Rating Category')
 plt.ylabel('Frequency')
 plt.xticks(rotation=45)
-plt.axhline(0, color='black', linewidth=0.5, linestyle='--')  # Draw a horizontal line at y=0
+plt.axhline(0, color='black', linewidth=0.5, linestyle='--')  
 plt.legend()
-
-
 
 # Save the plot with new name
 plt.savefig('artifacts/R-G-rate.png')
 
 
-# Plot 2: PG and G on the same graph
-plt.figure(figsize=(12, 6))
-y_pg = df['PG'].values
-plot_data(x_labels, y_pg, 'PG', 'Frequency of PG and G Ratings', 'blue', 's')
-
-# Re-plot G on the same graph
-plot_data(x_labels, y_g, 'G', 'Frequency of G Ratings', 'orange', 'D')
-
-# Adding annotations for PG and G
-for i, (pg, g) in enumerate(zip(y_pg, y_g)):
-    plt.text(i, pg + 0.02, 'PG', color='blue', fontsize=12, ha='center')
-    plt.text(i, g + 0.02, 'G', color='orange', fontsize=12, ha='center')
-
-# Customize the second plot
-plt.figtext(0.1, 0.01, 'frequency=count/total', ha='center', fontsize=12)
-plt.title('Frequency of PG and G Content Ratings by Rating Category')
-plt.xlabel('Rating Category')
-plt.ylabel('Frequency')
-plt.xticks(rotation=45)
-plt.axhline(0, color='black', linewidth=0.5, linestyle='--')  # Draw a horizontal line at y=0
-plt.legend()
-
-
-# Save the second plot with new name
-plt.savefig('artifacts/PG-G-rate.png')
-
-
-# Plot 3: PG-13 and G on the same graph
+# Plot 2: PG-13 and G on the same graph
 plt.figure(figsize=(12, 6))
 y_pg13 = df['PG-13'].values
 plot_data(x_labels, y_pg13, 'PG-13', 'Frequency of PG-13 and G Ratings', 'green', '^')
@@ -96,3 +67,4 @@ plt.legend()
 plt.savefig('artifacts/PG-13-G-rate.png')
  
 
+plt.show()
