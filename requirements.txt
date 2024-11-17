@@ -1,15 +1,7 @@
 requests==2.27.1
 beautifulsoup4==4.10.0
 pandas
-collections
 matplotlib.pyplot
 scipy.stats
 seaborn
-math
-re
-os
-Counter
 pearsonr
-json
-get_soup
-csv
